@@ -1,0 +1,992 @@
+/*************************** REPORT  page **********************************/
+
+.funds .tab {
+    overflow: hidden;
+    background-color:none;color:white;
+}
+.funds .tab button {
+    background-color: inherit;
+    float: left;color:#00F0C8;
+    border: none;
+    outline: none;
+    cursor: pointer;width:100%;
+    border:1px solid #00F0C8;
+    transition: 0.3s;border-radius: 4px;
+    font-size: 15px;padding:8px 15px;
+}
+
+.funds .tab button.active {
+    background-color: #00F0C8;color:#0C192A; 
+
+}
+
+.funds .tabcontent {
+    display: none;
+    border-top: none;
+}
+.fundstab
+{
+    background:#13253B;border-radius:6px;box-shadow:  1px -1px 7px 2px #09121F;padding: 40px 0px 40px;
+}
+
+
+/***** open order tab **/
+
+#open  .input-container {
+  display: flex;
+  width: 100%;font-size:13px;
+  margin-bottom: 15px;border: 1px solid #00F0C8;border-radius:4px;
+}
+
+#open .dateicon {
+  padding: 8px 0px 0px;
+  background: none;
+  color: white;
+  min-width: 30px;
+  text-align: center;
+}
+
+#open .input-field {
+  width: 100%;padding:8px 0px;
+  color:#00F0C8;font-weight: normal;
+  outline: none;background: #13253B;;height:32px;
+}
+
+/**** SELECT LIST reports page ***/
+ #open .custom-select {
+  position: relative;
+  font-family: Arial;font-size:13px;
+}
+#open .custom-select select {
+  display: none;
+}
+#open .select-selected {
+    color: #00F0C8;
+  background-color:#13253B;;border: 1px solid #00F0C8;border-radius: 3px;
+}
+
+ #open .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border: 5px solid #00F0C8;
+  border-color: #fff transparent transparent transparent;
+}
+
+#open .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #00F0C8  transparent;
+  top: 7px;
+}
+
+ #open .select-items div,.select-selected {
+  color: #13253B;background:#00F0C8;border:1px solid #13253B;
+  padding: 6px 0px 7px 5px;border-radius:3px;
+  cursor: pointer;
+  
+}
+/*
+#open div
+{
+    border-radius: 0px 0px 4px 4px;
+}
+*/
+
+#open .select-items {
+  position: absolute;
+  background-color:#13253B;
+  top: 100%;color:black;border-left: 1px solid #00F0C8;border-right: 1px solid #00F0C8;border-bottom: 1px solid #00F0C8;
+  left: 0;
+  right: 0;border-radius: 1px 1px 4px 4px;
+    right:
+  z-index: 99;
+}
+
+#open .select-hide {
+  display: none;
+}
+#open .select-items div:hover, .same-as-selected {
+ color: #00F0C8; background-color: #13253B;
+}
+
+/********** RADIO BTN FOR REPOT *****/
+input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #13253B;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #244B7A;margin-top:2px;
+    }
+input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:  #00F0C8;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0B192B;;
+    }
+
+/****RADIO BTN *****/
+/*
+#open input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #13253B;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #244B7A;margin-top:2px;
+    }
+#open input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:  #00F0C8;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0B192B;;
+    }
+*/
+/************  tabel ****/
+.scrollbar7 {
+	height: 450px;
+    border-radius: 4px;border-radius: 4px 4px 4px 4px;;
+	overflow-y: scroll;border: 1px solid #00F0C8;;
+}
+.force-overflow7 {
+	min-height: auto;
+}
+
+#wrapper {
+	text-align: center;
+	
+}
+#style-7::-webkit-scrollbar {
+	width: 6px;height:6px;
+	background-color:none;
+}
+#style-7::-webkit-scrollbar-button {
+	border-radius: 50px;
+	background-color: #385275;;
+}
+
+#style-7::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color:none;
+}
+.scrollbar7 table {
+    text-align: center;color:#FFFFFF;
+     border-collapse: collapse;border:none;background: none;
+    width: 100%;font-size: 11px;font-family:Arial;
+}
+
+ .scrollbar7 table td:hover ,td:active,td:visited{
+        background: none;
+    }
+.scrollbar7 td {
+     text-align: center;
+    padding:13px 8px;
+}
+
+.scrollbar7  th {
+       text-align: center;border-bottom: 1px solid #00F0C8;;
+    padding: 13px 0px;
+    background: #13253B;
+    font-weight: 50;
+    }
+.scrollbar7 tr:nth-child(odd){
+    background-color: #0B192B;
+}
+
+.scrollbar7 tr:nth-child(even){
+    background-color: #13253B;
+}
+.scrollbar7 tbody td:nth-child(3)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(7)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(8)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(6)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(2)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(1)
+    {
+         border-left:1px solid #455364;min-width: 120px;
+    }
+.scrollbar7 tbody td:nth-child(4)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar7 tbody td:nth-child(5)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar7 tbody td:nth-child(10)
+    {
+         border-left:1px solid #455364;color:#01F602;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(12)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(11)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar7 tbody td:nth-child(9)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+
+.scrollbar7 .fa-window-close
+{
+    color:#384759;font-size:17px;
+}
+
+
+
+/********** DATE SET STYLING for RPEORT PAGE*******************/
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, 
+    .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #0B192B;
+    background: none;
+}
+     
+    .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+     border-radius: 4px 4px 0px 0px; 
+}
+    .ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;border-radius: none;
+    text-align: center;background: none;
+}
+   .ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+.ui-datepicker td {
+    border: 0;
+    background: none;
+}
+   .ui-datepicker td, th {
+    padding: 0;
+}
+    .ui-datepicker  td:hover ,td:active,td:visited{
+        background: #02A88C;border-radius: 4px;
+    }
+    
+ .ui-datepicker table
+    {
+        text-align: center;border-radius: 0px 0px 4px 4px;
+    background-color: #00F0C8;color:  #0B192B;
+}
+    .ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #00F0C8 url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+    color: #222222;
+    font-weight: bold;
+}
+    .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -8px;
+}
+    .ui-datepicker  .ui-datepicker-prev:hover {
+    background: none;border-radius: 4px 4px 4px 4px;
+}
+   .ui-datepicker  .ui-datepicker-next:hover {
+    background: none;border-radius: 4px 4px 4px 4px;
+} 
+ 
+    .ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+    .ui-widget.ui-widget-content {
+    border: 1px solid #00F0C8;
+}
+    .ui-widget-content {
+    border: 2px solid #00F0C8;
+    background: none;
+    color: #222222;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+
+
+/***** FUTURE CONTRACT tab **/
+
+#futu  .input-container {
+  display: flex;
+  width: 100%;font-size:13px;
+  margin-bottom: 15px;border: 1px solid #00F0C8;border-radius:4px;
+}
+
+#futu .dateicon {
+  padding: 8px 0px 0px;
+  background: none;
+  color: white;
+  min-width: 30px;
+  text-align: center;
+}
+
+#futu .input-field {
+  width: 100%;padding:8px 0px;
+  color:#00F0C8;font-weight: normal;
+  outline: none;background: #13253B;;height:32px;
+}
+
+/**** SELECT LIST reports page ***/
+#futu .custom-select {
+  position: relative;
+  font-family: Arial;font-size:13px;
+}
+#futu .custom-select select {
+  display: none;
+}
+#futu .select-selected {
+    color: #00F0C8;
+  background-color:#13253B;;border: 1px solid #00F0C8;border-radius: 3px;
+}
+
+ #futu .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border: 5px solid #00F0C8;
+  border-color: #fff transparent transparent transparent;
+}
+
+#futu .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #00F0C8  transparent;
+  top: 7px;
+}
+
+ #futu .select-items div,.select-selected {
+  color: #13253B;background:#00F0C8;
+  padding: 6px 0px 7px 5px;border-radius:0px;
+  cursor: pointer;
+  
+}
+/*
+#open div
+{
+    border-radius: 0px 0px 4px 4px;
+}
+*/
+
+#futu .select-items {
+  position: absolute;
+  background-color:#13253B;
+  top: 100%;color:black;border-left: 1px solid #00F0C8;border-right: 1px solid #00F0C8;border-bottom: 1px solid #00F0C8;
+  left: 0;
+  right: 0;border-radius: 1px 1px 4px 4px;
+    right:
+  z-index: 99;
+}
+
+  #futu .select-hide {
+  display: none;
+}
+#futu .select-items div:hover, .same-as-selected {
+ color: #00F0C8; background-color: #13253B;
+}
+
+/****RADIO BTN *****/
+/*
+#futu input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #13253B;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #244B7A;margin-top:2px;
+    }
+#futu input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:  #00F0C8;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0B192B;;
+    }
+*/
+
+
+/************  tabel ****/
+.scrollbar8 {
+	height: 450px;
+    border-radius: 4px;border-radius: 4px 4px 4px 4px;;
+	overflow-y: scroll;border: 1px solid #00F0C8;;
+}
+.force-overflow8 {
+	min-height: auto;
+}
+
+#wrapper {
+	text-align: center;
+	
+}
+#style-8::-webkit-scrollbar {
+	width: 6px;height:6px;
+	background-color:none;
+}
+#style-8::-webkit-scrollbar-button {
+	border-radius: 50px;
+	background-color: #385275;;
+}
+
+#style-8::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color:none;
+}
+.scrollbar8 table {
+    text-align: center;color:#FFFFFF;
+     border-collapse: collapse;border:none;background: none;
+    width: 100%;font-size: 11px;font-family:Arial;
+}
+
+ .scrollbar8 table td:hover ,td:active,td:visited{
+        background: none;
+    }
+.scrollbar8 td {
+     text-align: center;
+    padding:13px 8px;
+}
+
+.scrollbar8  th {
+       text-align: center;border-bottom: 1px solid #00F0C8;;
+    padding: 13px 0px;
+    background: #13253B;
+    font-weight: 50;
+    }
+.scrollbar8 tr:nth-child(odd){
+    background-color: #0B192B;
+}
+
+.scrollbar8 tr:nth-child(even){
+    background-color: #13253B;
+}
+.scrollbar8 tbody td:nth-child(3)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar8 tbody td:nth-child(7)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+.scrollbar8 tbody td:nth-child(8)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+.scrollbar8 tbody td:nth-child(6)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+.scrollbar8 tbody td:nth-child(2)
+    {
+         border-left:1px solid #455364;min-width: 120px;
+    }
+.scrollbar8 tbody td:nth-child(1)
+    {
+         border-left:1px solid #455364;min-width: 120px;
+    }
+.scrollbar8 tbody td:nth-child(4)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar8 tbody td:nth-child(5)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+.scrollbar8 tbody td:nth-child(10)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar8 tbody td:nth-child(12)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar8 tbody td:nth-child(13)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar8 tbody td:nth-child(11)
+    {
+         border-left:1px solid #455364;min-width: 60px;color:#01F602;
+    }
+.scrollbar8 tbody td:nth-child(9)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+
+.scrollbar8 .fa-window-close
+{
+    color:#384759;font-size:17px;
+}
+
+
+/***** MY TRDAES tab **/
+
+#trad  .input-container {
+  display: flex;
+  width: 100%;font-size:13px;
+  margin-bottom: 15px;border: 1px solid #00F0C8;border-radius:4px;
+}
+
+#trad  .dateicon {
+  padding: 8px 0px 0px;
+  background: none;
+  color: white;
+  min-width: 30px;
+  text-align: center;
+}
+
+#trad  .input-field {
+  width: 100%;padding:8px 0px;
+  color:#00F0C8;font-weight: normal;
+  outline: none;background: #13253B;;height:32px;
+}
+
+/**** SELECT LIST reports page ***/
+#trad  .custom-select {
+  position: relative;
+  font-family: Arial;font-size:13px;
+}
+#trad  .custom-select select {
+  display: none;
+}
+#trad  .select-selected {
+    color: #00F0C8;
+  background-color:#13253B;;border: 1px solid #00F0C8;border-radius: 3px;
+}
+
+ #trad  .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border: 5px solid #00F0C8;
+  border-color: #fff transparent transparent transparent;
+}
+
+#trad  .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #00F0C8  transparent;
+  top: 7px;
+}
+
+#trad  .select-items div,.select-selected {
+  color: #13253B;background:#00F0C8;
+  padding: 6px 0px 7px 5px;border-radius:0px;
+  cursor: pointer;
+  
+}
+/*
+#open div
+{
+    border-radius: 0px 0px 4px 4px;
+}
+*/
+
+#trad  .select-items {
+  position: absolute;
+  background-color:#13253B;
+  top: 100%;color:black;border-left: 1px solid #00F0C8;border-right: 1px solid #00F0C8;border-bottom: 1px solid #00F0C8;
+  left: 0;
+  right: 0;border-radius: 1px 1px 4px 4px;
+    right:
+  z-index: 99;
+}
+
+ #trad .select-hide {
+  display: none;
+}
+#trad .select-items div:hover, .same-as-selected {
+ color: #00F0C8; background-color: #13253B;
+}
+
+/****RADIO BTN *****/
+/*
+#trad input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #13253B;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #244B7A;margin-top:2px;
+    }
+*/
+/*
+#trad input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:  #00F0C8;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0B192B;;
+    }
+*/
+
+
+/************  tabel ****/
+.scrollbar9 {
+	height: 450px;
+    border-radius: 4px;border-radius: 4px 4px 4px 4px;;
+	overflow-y: scroll;border: 1px solid #00F0C8;;
+}
+.force-overflow9 {
+	min-height: auto;
+}
+
+#wrapper {
+	text-align: center;
+	
+}
+#style-9::-webkit-scrollbar {
+	width: 6px;height:6px;
+	background-color:none;
+}
+#style-9::-webkit-scrollbar-button {
+	border-radius: 50px;
+	background-color: #385275;;
+}
+
+#style-9::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color:none;
+}
+.scrollbar9 table {
+    text-align: center;color:#FFFFFF;
+     border-collapse: collapse;border:none;background: none;
+    width: 100%;font-size: 11px;font-family:Arial;
+}
+
+ .scrollbar9 table td:hover ,td:active,td:visited{
+        background: none;
+    }
+.scrollbar9 td {
+     text-align: center;
+    padding:13px 8px;
+}
+
+.scrollbar9  th {
+       text-align: center;border-bottom: 1px solid #00F0C8;;
+    padding: 13px 0px;
+    background: #13253B;
+    font-weight: 50;
+    }
+.scrollbar9 tr:nth-child(odd){
+    background-color: #0B192B;
+}
+
+.scrollbar9 tr:nth-child(even){
+    background-color: #13253B;
+}
+.scrollbar9 tbody td:nth-child(3)
+    {
+         border-left:1px solid #455364;min-width: 80px;
+    }
+.scrollbar9 tbody td:nth-child(7)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+.scrollbar9 tbody td:nth-child(8)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+.scrollbar9 tbody td:nth-child(6)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+.scrollbar9 tbody td:nth-child(2)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+.scrollbar9 tbody td:nth-child(1)
+    {
+         border-left:1px solid #455364;min-width: 120px;
+    }
+.scrollbar9 tbody td:nth-child(4)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar9 tbody td:nth-child(5)
+    {
+         border-left:1px solid #455364;min-width: 50px;
+    }
+.scrollbar9 tbody td:nth-child(10)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+    }
+.scrollbar9 tbody td:nth-child(12)
+    {
+         border-left:1px solid #455364;min-width: 60px;color:#01F602;
+    }
+  .scrollbar9 tbody td:nth-child(11)
+    {
+         border-left:1px solid #455364;min-width: 60px;
+}
+.scrollbar9 tbody td:nth-child(9)
+    {
+         border-left:1px solid #455364;min-width: 40px;
+    }
+
+.scrollbar9 .fa-window-close
+{
+    color:#384759;font-size:17px;
+}
+
+
+/***** ORDER HISTORY  tab **/
+
+#ordr .input-container {
+  display: flex;
+  width: 100%;font-size:13px;
+  margin-bottom: 15px;border: 1px solid #00F0C8;border-radius:4px;
+}
+
+#ordr  .dateicon {
+  padding: 8px 0px 0px;
+  background: none;
+  color: white;
+  min-width: 30px;
+  text-align: center;
+}
+
+#ordr  .input-field {
+  width: 100%;padding:8px 0px;
+  color:#00F0C8;font-weight: normal;
+  outline: none;background: #13253B;;height:32px;
+}
+
+/**** SELECT LIST reports page ***/
+#ordr  .custom-select {
+  position: relative;
+  font-family: Arial;font-size:13px;
+}
+#ordr  .custom-select select {
+  display: none;
+}
+#ordr  .select-selected {
+    color: #00F0C8;
+  background-color:#13253B;;border: 1px solid #00F0C8;border-radius: 3px;
+}
+
+ #ordr  .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 6px;
+  width: 0;
+  height: 0;
+  border: 5px solid #00F0C8;
+  border-color: #fff transparent transparent transparent;
+}
+
+#ordr  .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #00F0C8  transparent;
+  top: 7px;
+}
+
+#ordr  .select-items div,.select-selected {
+  color: #13253B;background:#00F0C8;
+  padding: 6px 0px 7px 5px;border-radius:0px;
+  cursor: pointer;
+  
+}
+/*
+#open div
+{
+    border-radius: 0px 0px 4px 4px;
+}
+*/
+
+#ordr  .select-items {
+  position: absolute;
+  background-color:#13253B;
+  top: 100%;color:black;border-left: 1px solid #00F0C8;border-right: 1px solid #00F0C8;border-bottom: 1px solid #00F0C8;
+  left: 0;
+  right: 0;border-radius: 1px 1px 4px 4px;
+    right:
+  z-index: 99;
+}
+
+ #ordr .select-hide {
+  display: none;
+}
+#ordr .select-items div:hover, .same-as-selected {
+ color: #00F0C8; background-color: #13253B;
+}
+
+/****RADIO BTN *****/
+/*
+#ordr input[type='radio']:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #13253B;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #244B7A;margin-top:2px;
+    }
+#ordr input[type='radio']:checked:after {
+        width: 13px;
+        height: 13px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:  #00F0C8;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid #0B192B;;
+    }
+*/
+
+
+/************  tabel ****/
+.scrollbar10 {
+	height: 450px;
+    border-radius: 4px;border-radius: 4px 4px 4px 4px;;
+	overflow-y: scroll;border: 1px solid #00F0C8;;
+}
+.force-overflow10 {
+	min-height: auto;
+}
+
+#wrapper {
+	text-align: center;
+	
+}
+#style-10::-webkit-scrollbar {
+	width: 6px;height:6px;
+	background-color:none;
+}
+#style-10::-webkit-scrollbar-button {
+	border-radius: 50px;
+	background-color: #385275;;
+}
+
+#style-10::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color:none;
+}
+.scrollbar10 table {
+    text-align: center;color:#FFFFFF;
+     border-collapse: collapse;border:none;background: none;
+    width: 100%;font-size: 11px;font-family:Arial;
+}
+
+ .scrollbar10 table td:hover ,td:active,td:visited{
+        background: none;
+    }
+.scrollbar10 td {
+     text-align: center;
+    padding:13px 8px;
+}
+
+.scrollbar10  th {
+       text-align: center;border-bottom: 1px solid #00F0C8;;
+    padding: 13px 0px;
+    background: #13253B;
+    font-weight: 50;
+    }
+.scrollbar10 tr:nth-child(odd){
+    background-color: #0B192B;
+}
+
+.scrollbar10 tr:nth-child(even){
+    background-color: #13253B;
+}
+.scrollbar10 tbody td:nth-child(11)
+    {
+         min-width: 60px;color:#01F602;
+    }
+
+.scrollbar10 tbody td
+{
+    border-left:1px solid #455364;
+}
+
+
+/****************/

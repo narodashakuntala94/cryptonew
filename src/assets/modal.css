@@ -1,0 +1,1071 @@
+/***************** WHOLE MODAL STYLING **************/
+
+/************************************* ASSET PAGE MODAL ***********************/
+/************ MODAL BTN VIEW DETAILS CLICK MODAL */
+
+    
+.col-50 {
+    
+    width: 40%;
+    
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-50 input[type=text] {
+    width: 40%;
+    padding: 8px;
+  
+    resize: vertical;
+}
+.col-75 {
+    
+    width: 60%;
+    
+}
+
+/* Clear floats after the columns */
+/*
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-75 input[type=text] {
+    width: 60%;
+    padding: 8px;
+  
+    resize: vertical;
+}
+*/
+
+/
+.modal-dialog {
+   
+      max-height: 200px;
+      max-width:  150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+@media screen and (min-width: 768px) {
+        .modal-dialog {
+          width: 400px; /* New width for default modal */
+        }
+        .modal-sm {
+          width: 350px; /* New width for small modal */
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .modal-lg {
+          width: 800px; /* New width for large modal */
+        }
+    }
+
+#myModal .modal-content 
+{
+    border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+}
+#myModal .modal-header
+{
+    background: #12365C;border: none;border-radius:6px 6px 0px 0px;
+}
+ #myModal .modal-header .close
+{
+    position: absolute;top:8px;right:8px;
+}
+h4.modal-title
+{
+    color: white;font-weight: bold;font-size:18px;
+}
+.modal-content .logobit
+{
+    border-radius: 50%;border:5px solid #060D15;position: absolute;top:20px;left:30px;z-index: 1;
+}
+#myModal  .modal-body
+{
+    background: #060D15;border:none;position: relative;
+                padding: 1px;
+}
+h5
+{
+    color:#00F0C8;font-weight: 600;font-size: 16px;
+}
+#myModal  .modal-footer
+{
+    background: #031832;border: none;border-radius:0px 0px 6px 6px;
+}
+#myModal  .modal-footer table
+{
+color: white;font-size:14px;font-family: sans-serif;width:100%;
+}
+#myModal  .modal-footer table tr
+{
+     border-bottom: 1px solid #212121;margin: 0px;padding: 0px;
+}
+#myModal  .modal-footer table tr td:nth-child(1)
+{
+     text-align: right;width:50%;padding:12px 20px;
+}
+#myModal  .modal-footer table tr td:nth-child(2)
+{
+     text-align: left;width:50%;
+}
+#myModal  .modal-footer table tr td input[type="text"]{
+    color:#00F0C8;width:80px;font-weight: 500;color:#03D6B9;background: none;border:none;
+}
+a.success
+{
+    color: #00D907;font-weight: bold;font-size:15px;
+}
+.fa-question-circle
+{
+    color:lightgray;font-size: 15px;margin-right: 8px;
+}
+#myModal  .modal-footer button
+{
+    background: #12365C;color:#03D6B9;font-size: 14px;font-weight: 600;padding: 2px 30px;border:none;border-radius: 4px;
+}
+/************************ Transactioon details succesfful clikc **************/
+.transactionclick
+{
+    background: #12365C;border-radius:8px;width:85%;margin: 0px auto;color:white;padding: 20px 10px;text-align: center;
+    
+}
+.transactionclick a
+{
+    color:white;font-size: 12px;
+    
+}
+.transactionclick label
+{
+    font-size:12px;color:white;font-weight: normal;
+    
+}
+#myModal1 .modal-content 
+{
+    border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+}
+#myModal1 .modal-header
+{
+    background: #12365C;border: none;border-radius:6px 6px 0px 0px;
+}
+ #myModal1 .modal-header .close
+{
+    position: absolute;top:8px;right:8px;
+}
+h4.modal-title
+{
+    color: white;font-weight: bold;font-size:18px;
+}
+.modal-content .logobit
+{
+    border-radius: 50%;border:5px solid #060D15;position: absolute;top:20px;left:30px;z-index: 1;
+}
+#myModal1  .modal-body
+{
+    background: #060D15;border:none;position: relative;
+                padding: 1px;
+}
+h5
+{
+    color:#00F0C8;font-weight: 600;font-size: 16px;
+}
+#myModal1  .modal-footer
+{
+    background: #031832;border: none;border-radius:0px 0px 6px 6px;
+}
+#myModal1  .modal-footer table
+{
+color: white;font-size:14px;font-family: sans-serif;width:100%;
+}
+
+#myModal1  .modal-footer table tr td:nth-child(1)
+{
+     text-align: right;width:50%;padding:12px 20px;
+}
+#myModal1  .modal-footer table tr td:nth-child(2)
+{
+     text-align: left;width:50%;
+}
+#myModal1  .modal-footer table tr td input[type="text"]{
+    color:#00F0C8;width:80px;font-weight: 500;color:#03D6B9;background: none;border:none;
+}
+a.success
+{
+    color: #00D907;font-weight: bold;font-size:15px;
+}
+.fa-question-circle
+{
+    color:lightgray;font-size: 15px;margin-right: 8px;
+}
+#myModal1  .modal-footer button
+{
+    background: #12365C;color:#03D6B9;font-size: 14px;font-weight: 600;padding: 2px 30px;border:none;border-radius: 4px;
+}
+/************** DEPOSIT BTN ***********/
+#myModal2 p{
+    color:white;font-size:12px;margin: 0px;padding: 0px;text-align: center;line-height: 25px;
+    padding: 0px 20px;
+}
+#myModal2 .scanner
+{
+    height:90px;width:90px;
+}
+.copycode1 input[type="text"]
+{
+    color:white;background: none;border:1px solid #03D6B9;border-radius: 4px;padding: 4px 12px;font-size: 13px;
+}
+#myModal2 .modal-content 
+{
+    border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+}
+#myModal2 .modal-header
+{
+    background: #12365C;border: none;border-radius:6px 6px 0px 0px;
+}
+ #myModal2 .modal-header .close
+{
+    position: absolute;top:8px;right:8px;
+}
+.modal-content .logobit
+{
+    border-radius: 50%;border:5px solid #060D15;position: absolute;top:20px;left:30px;z-index: 1;
+}
+#myModal2  .modal-body
+{
+    background: #060D15;border:none;position: relative;
+                padding: 1px;
+}
+h5
+{
+    color:#00F0C8;font-weight: 600;font-size: 16px;
+}
+#myModal2  .modal-footer
+{
+    background: #031832;border: none;border-radius:0px 0px 6px 6px;
+}
+#myModal2  .modal-footer table
+{
+color: white;font-size:14px;font-family: sans-serif;width:100%;
+}
+
+#myModal2  .modal-footer table tr td:nth-child(1)
+{
+     text-align: right;width:50%;padding:12px 20px;
+}
+#myModal2  .modal-footer table tr td:nth-child(2)
+{
+     text-align: left;width:50%;
+}
+#myModal2  .modal-footer table tr td input[type="text"]{
+    color:#00F0C8;width:80px;font-weight: 500;color:#03D6B9;background: none;border:none;
+}
+
+.modal-content .logobit
+{
+    border-radius: 50%;border:5px solid #060D15;position: absolute;top:20px;left:30px;z-index: 1;
+}
+#myModal2  .modal-body
+{
+    background: #060D15;border:none;position: relative;
+                padding: 1px;
+}
+h5
+{
+    color:#00F0C8;font-weight: 600;font-size: 16px;
+}
+#myModal2  .modal-footer
+{
+    background: #031832;border: none;border-radius:0px 0px 6px 6px;
+}
+
+
+.copycode1 button
+{
+    background:#03D6B9;padding: 4px 10px;color:#05172D;border-radius: 3px;border:none;
+}
+#myModal2  .copycode2 button
+{
+    background: #12365C;color:#03D6B9;font-size: 14px;font-weight: 600;padding: 2px 30px;border:none;border-radius: 4px;
+}
+/*************************** WITHDRAW ***********************/
+
+#myModal3  .modal-footer table tr td:nth-child(1)
+{
+     text-align: right;width:50%;padding:12px 20px;
+}
+#myModal3  .modal-footer table tr td:nth-child(2)
+{
+     text-align: left;width:50%;
+}
+#myModal3  .modal-footer table tr td input[type="text"]{
+    color:#00F0C8;width:80px;font-weight: 500;color:#03D6B9;background: none;border:none;
+}
+#myModal3 p{
+    color:white;font-size:12px;margin: 0px;padding: 0px 10px;text-align: center;line-height: 16px;
+}
+#myModal3 .copycode3
+{
+    color:#BDBDBD;background: #05172D; 
+}
+#myModal3 .copycode3 span
+{
+    float: left;font-size: 11px;margin-bottom: 3px;
+}
+#myModal3 form .copycode3 button
+{
+    background:#03D6B9;padding: 3px 10px;color:#05172D;border-radius: 3px;border:none;
+}
+#myModal3  .copycode2 button
+{
+    background: #12365C;color:#03D6B9;font-size: 14px;font-weight: 600;padding: 2px 30px;border:none;border-radius: 4px;
+}
+#myModal3 .copycode3 input[type="text"]
+{
+    color:white;background: none;border:1px solid #03D6B9;border-radius: 4px;padding: 4px 12px;font-size: 13px;
+}
+#myModal3 form 
+{
+    max-width:330px;margin: 0px auto;
+}
+
+#myModal3 .modal-content 
+{
+    border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+}
+#myModal3 .modal-header
+{
+    background: #12365C;border: none;border-radius:6px 6px 0px 0px;
+}
+ #myModal3 .modal-header .close
+{
+    position: absolute;top:8px;right:8px;
+}
+.modal-content .logobit
+{
+    border-radius: 50%;border:5px solid #060D15;position: absolute;top:20px;left:30px;z-index: 1;
+}
+#myModal3  .modal-body
+{
+    background: #060D15;border:none;position: relative;
+                padding: 1px;
+}
+h5
+{
+    color:#00F0C8;font-weight: 600;font-size: 16px;
+}
+#myModal3  .modal-footer
+{
+    background: #031832;border: none;border-radius:0px 0px 6px 6px;
+}
+#myModal3  .modal-footer table
+{
+color: white;font-size:14px;font-family: sans-serif;width:100%;
+}
+/************************************* ACCOUNT PAGE MODAL *******************************/
+ /**************** SECURITY TAB MODAL ****/
+/************************ CLICK ON SUBMIT IN MOBILE MODAL **************/
+#myModalsuc .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;height:auto;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+    }
+
+#myModalsuc .modal-body {
+    background: white;
+    color: #0B192B;border-radius: 5px;border: 1px solid #01DAB8;
+    position: relative;height:330px;background-position: center;
+    padding: 1px;margin: 0px auto;background-repeat: no-repeat;padding-bottom: 15px;
+    }
+#myModalsuc span
+{
+    background:#009C15 ;height:100px;width:100px;border-radius: 50px;color:white;font-size:45px;padding: 20px;top:60px;
+}
+
+#myModalsuc h4
+{   
+    color:#666666;font-weight: 500;padding: 0px 15px;font-size:20px;
+}
+
+
+/************ CLICK ON MOBILE IMG AND SMS ENABLE BTN ***************/
+#myModalmob .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myModalmob .close
+{
+    color: white;opacity: 0.5;
+}
+#myModalmob .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+#myModalmob .modal-body button
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;
+}
+#myModalmob .modal-body form
+{
+    max-width:320px;margin: 0px auto;padding: 0px 15px;
+}
+#myModalmob  form .input6
+    {
+        color: white;border: none;
+        width:auto;background: linear-gradient(to left,#00E8C2 ,#0B1C2D);font-size:12px;padding:0px 20px;
+    }
+#myModalmob form .input5
+    {
+        color: white;border: none;
+        width:auto;background: linear-gradient(to right,#00E8C2 ,#0B1C2D);font-size:12px;padding: 0px ;
+    }
+#myModalmob form .submit
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;border:none;border-radius:4px;
+    
+}
+
+ #myModalmob form   .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myModalmob form .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+#myModalmob .modal-body {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+
+/*******************  security page load modal    ***************/
+#myModalsec .modal-body, .modal-footer {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+   
+#myModalsec .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myModalsec .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+#myModalsec .close
+{
+    color: white;opacity: 0.5;
+}
+#myModalsec .modal-body .p1
+{
+    font-size: 12px;padding: 20px 0px;
+}
+
+#myModalsec .modal-body .badge
+{
+    font-size:14px;background:#0B192B;padding: 3px 6px; font-weight: normal;
+}
+
+#myModalsec  .modal-body  span
+{
+font-weight: bold;font-size:16px;
+}
+
+#myModalsec .modal-body .divimg
+{
+    border: 2px solid lightgrey;border-radius: 4px;padding: 10px 0px;
+}
+#myModalsec .modal-body p
+{
+    color:grey;font-size:6px;
+}
+
+#myModalsec .modal-footer button
+{
+    background: #0B192B;color:white;padding: 3px 40px;font-weight: normal;border: none;border-radius: 3px;
+}
+#myModalsec .modal-footer a{
+    color: #11253D;font-size:11px;
+}
+#myModalsec .modal-body a:hover{text-decoration: none;}
+
+/**************** GOOGLE AYTHENTICATION IMG CLICK MODAL ****/
+#myModalgoo1 .modal-body, .modal-footer {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+   
+#myModalgoo1 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);padding: 0px;
+}
+#myModalgoo1 .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+#myModalgoo1 .nav-tabs>li>a {
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: none;color:white;font-weight: 500;
+    border-radius: 0px 0px 0 0;border-right:1px solid #0B192B;
+}
+    #myModalgoo1 .nav-tabs>li>a:hover {
+    border-color: none;background: none;border-right:1px solid #0B192B;
+}
+   #myModalgoo1 .nav-tabs {
+    border-bottom: 1px solid #00F0C8;font-size:13px;text-align: left;
+}
+  #myModalgoo1 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+    color: #0B192B;
+    cursor: default;
+    background-color:white;
+    border: 1px solid #00F0C8;border-right:1px solid #0B192B;
+   
+}
+ #myModalgoo1 .nav-tabs li .fa{
+        color:white;;font-size:18px;margin: 0px 10px 0px 10px;
+    }
+#myModalgoo1 .nav-tabs>li.active .fa{
+        color:#00F0C8;;font-size:18px;
+    }
+#myModalgoo1 .glyphicon
+{
+    color:white;;font-size:16px;margin: 0px 10px 0px 10px;
+}
+
+     #myModalgoo1 .nav-tabs>li.active .glyphicon{
+        color:#00F0C8;;font-size:16px;
+    }
+
+ #myModalgoo1  p
+{
+    color:#0B192B;font-size: 18px;padding:0px 15px;
+}
+#myModalgoo1 .modal-body form
+{
+    max-width:360px;margin: 0px auto;padding: 0px 15px;
+}
+
+#myModalgoo1 form .submit
+{
+    background: #0B192B;color:white;padding:5px 8px;font-weight: normal;border:none;border-radius:4px;font-size:13px;
+}
+
+#myModalgoo1 form .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myModalgoo1 form .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+ #myModalgoo1 form .icon {
+  padding: 10px;
+ background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+  color: white;
+  min-width: 50px;font-size:18px;
+  text-align: center;
+}
+#myModalgoo1 form label {
+    font-size:14px;font-weight: 600;
+}
+#myModalgoo1 a.btnNext
+{
+    background: #0B192B;color:white;padding:5px 25px;font-weight: normal;border:none;border-radius:4px;font-size:13px;text-decoration: none;cursor: pointer;
+}
+#myModalgoo1 .btnnext
+{
+    background: #0B192B;color:white;padding:5px 20px;font-weight: normal;border:none;border-radius:4px;font-size:13px;text-decoration: none;cursor: pointer;
+}
+#myModalgoo1 #menu1 form
+{
+    max-width:300px;margin: 0px auto;color:#0B192B;font-size: 12px;line-height: 18px;
+}
+#myModalgoo1 #menu1 form .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 5px;
+}
+#myModalgoo1 #menu1 form .input-field {
+    width: 100%;
+    padding: 10px;background: #0B192B;color:#00F0C8;;
+    outline: none;font-size:15px;
+}
+ #myModalgoo1 #menu1 form .icon {
+  padding: 8px;
+ background: #00F0C8;
+  color: #0B192B;
+  min-width: 50px;font-size:18px;
+  text-align: center;
+}
+#myModalgoo1 #menu1 img 
+{
+    padding: 3px;border: 3px solid black;border-radius:3px;
+}
+#myModalgoo1 .modal-body .badge
+{
+   font-size:16px;background:#0B192B;font-weight: normal;padding: 4px 7px;
+}
+
+
+
+/************************ CLICK ON GOOGLE AUTHENTICARIN  BUTTON MODAL **************/
+#myModalsuc1 .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;height:auto;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+    }
+
+    #myModalsuc1 .modal-body {
+        background: white;
+        color: #0B192B;border-radius: 5px;border: 1px solid #01DAB8;
+            margin: 0px auto;padding: 0px;
+        }
+ #myModalsuc1 span
+{
+    background:#009C15 ;height:100px;width:100px;border-radius: 50px;color:white;font-size:45px;padding: 20px;top:50px;
+}
+
+ #myModalsuc1  h4
+{   
+    color:#666666;font-weight: 500;padding: 0px 15px;font-size:20px;
+}
+
+/************************* CLIKC ON ENABLE ANTI PHISHING 1  MODAL *********************************/
+#myModalantiphis1 .modal-body, .modal-footer {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+   
+#myModalantiphis1 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myModalantiphis1 .modal-content
+    {
+       border: 1px solid #01DAB8;
+    }
+#myModalantiphis1  .modal-header  .close
+{
+    color: white;opacity:1.1;font-weight: normal;
+}
+#myModalantiphis1 .modal-footer button
+{
+    background: #0B192B;color:white;padding: 3px 40px;font-weight: normal;border: none;border-radius: 3px;
+}
+#myModalantiphis1 .modal-footer form
+{
+    max-width:300px;margin: 0px auto;padding: 0px 15px;
+}
+
+/*
+#myModalgoo1 form .submit
+{
+    background: #0B192B;color:white;padding:5px 8px;font-weight: normal;border:none;border-radius:4px;font-size:13px;
+}
+*/
+
+#myModalantiphis1 form .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myModalantiphis1 form .input-field {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+}
+ #myModalantiphis1 form .icon {
+  padding: 8px;
+ background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+  color: white;
+  min-width: 50px;font-size:18px;
+  text-align: center;
+}
+#myModalantiphis1 form label {
+    font-size:16px;font-weight: 600;padding-bottom: 10px;
+}
+#myModalantiphis1 p {
+    font-size:12px;padding: 10px 0px;color:#076F6A;font-weight: bold;
+}
+/************************* CLIKC ON ENABLE ANTI PHISHING 2 MODAL *********************************/
+#myModalantiphis2 .modal-body, .modal-footer {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+   
+#myModalantiphis2 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myModalantiphis2 .modal-content
+    {
+       border: 1px solid #01DAB8;
+    }
+#myModalantiphis2  .modal-header  .close
+{
+    color: white;opacity:1.1;font-weight: normal;
+}
+#myModalantiphis2 .modal-footer button
+{
+    background: #0B192B;color:white;padding: 3px 40px;font-weight: normal;;border: none;border-radius: 3px;
+}
+#myModalantiphis2 .modal-footer form
+{
+    max-width:300px;margin: 0px auto;padding: 0px 15px;
+}
+
+/*
+#myModalgoo1 form .submit
+{
+    background: #0B192B;color:white;padding:5px 8px;font-weight: normal;border:none;border-radius:4px;font-size:13px;
+}
+*/
+
+#myModalantiphis2 form .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myModalantiphis2 form .input-field {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+}
+ #myModalantiphis2 form .icon {
+  padding: 8px;
+ background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+  color: white;
+  min-width: 50px;font-size:18px;
+  text-align: center;
+}
+#myModalantiphis2 form label {
+    font-size:16px;font-weight: 600;padding-bottom: 10px;
+}
+#myModalantiphis2 p {
+    font-size:12px;padding: 10px 0px;color:#076F6A;font-weight: bold;
+}
+
+/************************ CLICK ON ANTI PHISHING MIDIFILED SAVE BUTTON CIKICK **************/
+#myModalanti1 .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;height:auto;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+    }
+
+    #myModalanti1 .modal-body {
+        background: white;
+        color: #0B192B;border-radius: 5px;border: 1px solid #01DAB8;
+            margin: 0px auto;padding: 0px;
+        }
+  #myModalanti1 span
+{
+    background:#009C15 ;height:100px;width:100px;border-radius: 50px;color:white;font-size:45px;padding: 20px;top:40px;
+}
+
+#myModalanti1  h4
+{   
+    color:#666666;font-weight: 500;padding: 0px 15px;font-size:20px;
+}
+
+/*************************** CLICK ON ENABLE BTN ON API KEY ******************************/
+#myapikey1 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myapikey1 .close
+{
+    color: white;opacity: 0.5;
+}
+#myapikey1 .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+#myapikey1 .modal-body button
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;
+}
+#myapikey1 .modal-body form
+{
+    max-width:330px;margin: 0px auto;padding: 0px 15px;
+}
+#myapikey1 form .input6
+    {
+        color: white;border: none;
+        width:auto;background: linear-gradient(to left,#00E8C2 ,#0B1C2D);font-size:12px;padding:0px 14px;
+    }
+#myapikey1 form .input5
+    {
+        color: white;border: none;padding: 0px 14px;
+        width:auto;background: linear-gradient(to right,#00E8C2 ,#0B1C2D);font-size:12px;
+    }
+#myapikey1 form .submit
+{
+    background: #0B192B;color:white;font-weight: normal;border:none;border-radius:4px;
+}
+
+ #myapikey1 form   .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myapikey1 form .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+#myapikey1 .modal-body {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+/*************************** CLICK ON API CREATE NEW KEY BTN ******************************/
+#myapikeyList1 .modal-lg
+{
+    max-width:600px;
+}
+#myapikeyList1 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myapikeyList1  .close
+{
+    color: white;opacity: 0.8;
+}
+#myapikeyList1 .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+#myapikeyList1 form .input6
+    {
+        color: white;border: none;text-align: center;
+        width:auto;background:#0B192B;padding: 0px 0px 0px 30px;;
+    }
+/*
+#myapikeyList1 .modal-body button
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;
+}
+*/
+#myapikeyList1 .modal-body form
+{
+    max-width:600px;margin: 0px auto;
+}
+#myapikeyList1 .input-container {
+    display: -ms-flexbox;  display: flex;border: 1px solid #0B192B; width:100%; background: #0B192B; border-radius: 2px;color:white;font-size:14px;
+}
+#myapikeyList1 .input-field 
+{
+    color:white;outline:none;border: none;background:none;font-weight: normal;padding: 0px; text-align:left;width:100%;
+}
+#myapikeyList1 .btn1
+{
+    background:#01DAB8; color:#0B192B;padding:7px 10px;border: none;border-radius: 3px;font-size: 14px;width:100%;margin: 0px 0px 10px 0px;
+}
+#myapikeyList1 .btn2
+{
+    background: #0B192B; color:#01DAB8;padding:7px 10px;border: none;border-radius: 3px;font-size: 14px;width:100%;margin: 0px 0px 10px 0px;
+}
+#myapikeyList1 p
+{
+    font-size:14px;color: #0B192B;font-weight: 500;font-family: 'arial';
+}
+/************ CLICK ON MODIFY BTN FOR LOGIN PASSWORD WINDOW ***************/
+#myModallogin1 .modal-header
+{
+    background: linear-gradient(to right,#00E8C2 ,#0B1C2D);
+}
+#myModallogin1 .close
+{
+    color: white;opacity: 0.5;
+}
+#myModallogin1 .modal-content
+    {
+        border: 1px solid #01DAB8;
+    }
+/*
+#myModallogin1 .modal-body button
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;
+}
+*/
+#myModallogin1 .modal-body form
+{
+    width:280px;margin: 0px auto;padding: 0px 15px;
+}
+#myModallogin1  form .input6
+    {
+        color: white;border: none;
+        width:auto;background: linear-gradient(to right,#00E8C2 ,#0B1C2D);font-size:16px;padding:8px 18px;
+    }
+
+#myModallogin1 form .submit
+{
+    background: #0B192B;color:white;padding: 5px 40px;font-weight: normal;border:none;border-radius:4px;
+}
+
+#myModallogin1 form   .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;border: 1px solid #0B192B;
+   border-radius: 2px;
+}
+#myModallogin1 form .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+#myModallogin1 .modal-body {
+    background: white;
+    border:none;color: #0B192B;
+    position: relative;height:auto;
+    padding: 1px;
+    }
+/************************ CLICK ON SUBMIT IN MODIFY LOGIN MODAL **************/
+#myModalsuc2 .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;height:auto;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+    }
+
+#myModalsuc2 .modal-body {
+    background: white;
+    color: #0B192B;border-radius: 5px;border: 1px solid #01DAB8;
+    position: relative;height:330px;background-position: center;
+    padding: 1px;margin: 0px auto;background-repeat: no-repeat;padding-bottom: 15px;
+    }
+#myModalsuc2 span
+{
+    background:#009C15 ;height:100px;width:100px;border-radius: 50px;color:white;font-size:45px;padding: 20px;top:40px;
+}
+
+#myModalsuc2 h4
+{
+    color:#666666;font-weight: 500;padding: 0px 15px;font-size:20px;
+}
+/************************ CLICK ON KYC SUBMIT BUTTON MODAL **************/
+#myModalkycsuc .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px black;height:auto;
+-webkit-box-shadow: 0 0 15px black;
+box-shadow: 0 0 15px black;
+    }
+
+    #myModalkycsuc .modal-body {
+        background: white;
+        color: #0B192B;border-radius: 5px;border: 1px solid #01DAB8;
+            margin: 0px auto;padding: 0px;
+        }
+ #myModalkycsuc span
+{
+    background:#009C15 ;height:100px;width:100px;border-radius: 50px;color:white;font-size:45px;padding: 20px;top:50px;
+}
+
+ #myModalkycsuc  h4
+{   
+    color:#666666;font-weight: 500;padding: 0px 15px;font-size:20px;
+}
+/********************** CLICK ON PERSONAL ACCT VERIFICTION SUBMIT VERIFICATION BTN ***********/
+#prsnlacctsubmodal .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px #203550;height:auto;
+-webkit-box-shadow: 0 0 15px #203550; 
+box-shadow: 0 0 15px #203550;
+    }
+
+    #prsnlacctsubmodal .modal-body {
+        background: #13253B;
+        border-radius: 5px;border: 1px solid #01DAB8;
+            margin: 0px auto;
+        }
+ 
+
+ #prsnlacctsubmodal .p1
+{   
+    font-size:16px;padding: 0px 10px;
+}
+#prsnlacctsubmodal .rowmodal
+{   
+    line-height: 20px;
+    margin: 0px;padding: 0px; background-color: #0C192A;max-width:360px;color: white;margin: 0px auto;font-size:13px;border-radius: 4px;padding: 10px 5px 0px;
+}
+#prsnlacctsubmodal button
+{
+    background-color: #00F0C8;color:  #0C192A;border: none;border-radius:4px;padding:3px 25px;font-size: 16px;
+}
+/********************** CLICK ON CORPORATE ACCT VERIFICTION SUBMIT VERIFICATION BTN ***********/
+#crprtacctsubmodal .modal-content
+    {
+        border:none;background: none;
+    -moz-box-shadow: 0 0 15px #203550;height:auto;
+-webkit-box-shadow: 0 0 15px #203550; 
+box-shadow: 0 0 15px #203550;
+    }
+
+    #crprtacctsubmodal .modal-body {
+        background: #13253B;
+        border-radius: 5px;border: 1px solid #01DAB8;
+            margin: 0px auto;
+        }
+ 
+
+ #crprtacctsubmodal .p1
+{   
+    font-size:16px;padding: 0px 10px;
+}
+#crprtacctsubmodal .rowmodal
+{   
+    line-height: 20px;
+    margin: 0px;padding: 0px; background-color: #0C192A;max-width:360px;color: white;margin: 0px auto;font-size:13px;border-radius: 4px;padding: 10px 5px 0px;
+}
+#crprtacctsubmodal button
+{
+    background-color: #00F0C8;color:  #0C192A;border: none;border-radius:4px;padding:3px 25px;font-size: 16px;
+}

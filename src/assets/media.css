@@ -1,0 +1,361 @@
+/************ nav bra media queris for 992 px device is collpase  *********/
+   @media (max-width: 1150px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;overflow: hidden;
+/*        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);*/
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+/**********/
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+           
+            .navbar-brand img
+            {
+            margin: 0px auto!important;
+            }
+
+       .navbar-toggle
+            {
+                margin:22px auto!important;
+            }
+            .menu-button
+            {
+                margin:12px auto!important;
+            }
+        }
+    
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        
+        .funds
+        {
+            margin-top: 30px !important;
+        }
+        .navbar
+        {
+            font-size:10px !important;
+        }
+        
+    }
+    
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+   
+    .navbar-collapse li
+    {
+        text-align: center !important;
+    }
+    .img1
+    {
+        height:60px;width:190px;
+    }
+    
+    
+    
+    
+}
+/************** INDEX PAGE TABLINKS HEAD*********/
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+  
+  .tablinks {
+            font-size:10px !important;  
+        }
+       .w3-button ,button {
+            font-size:11px !important;
+        }
+       body{
+           font-size:11px !important;
+       }
+        * table,th,td
+        {
+            font-size:12px !important;
+        }
+    .topdiv p
+    {
+        font-size:10px !important;
+    }
+    .nav-pills ,.radio1
+    {
+        font-size:10px !important;padding: 0px 0px !important;
+    }
+
+    .buybtn ,.redinput ,label
+    {
+        font-size:10px !important;
+    }
+     
+}
+@media (min-width:320px) and (max-width: 768px) {
+  
+  .tablinks {
+            font-size:11px !important; 
+        }
+
+}
+
+/************** MEDIA QUERIES FOR ASSET PAGE MODAL **************/
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .modal-body,
+      .modal-footer{
+          font-size:16px !important;
+      }
+      .transactionclick
+      {
+          font-size:12px !important;
+      }
+        .modal h4,h5
+      {
+          font-size:16px !important;
+      }
+      .modal img{
+          height:50px !important;
+          width:50px !important;
+      }
+      table
+      {
+          font-size:12px !important;
+      }
+}
+
+
+/********************* MEDIA QUERI FOR REPORT PAGE **************************/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+        body{
+        font-size:12px !important;
+            } 
+        .radio
+        {
+           display: inline-block!important;
+        }
+     button
+        {
+            font-size:10px !important;
+        }
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        .tablinks{
+            font-size:13px !important;
+        }
+        .custom-select,.input-container
+        {
+           font-size:10px !important;
+        }
+       .radio
+        {
+            font-size:8px !important;
+        }
+        button
+        {
+            font-size:10px !important;
+        }
+       
+    }
+/************* MEDIA QUERI FOR SUPPORT PAGE *************************/
+  @media screen and (max-width: 900px) and (min-width: 320px) {
+    .supporttabbtn
+        {
+            font-size:15px !important;
+        }
+        .support1box h4
+        {
+            margin: 0px !important;padding: 0px !important;padding: 15px 10px ! important;
+        }
+        .support1box textarea
+        {
+            margin: 0px !important; padding: 0px !important;padding: 15px !important;
+        }
+        .support1box button
+        {
+            position: absolute;top:50px !important;font-size:15px !important;;
+        } 
+    
+}
+
+/***************** MEDIA FOR TERMS OF USE PAGE and ABOUT COINCODE PAGE SUBMIT REQUEST ******************/
+/*
+@media only screen and (min-width : 320px) and (max-width:762px){
+    .aboutheaddiv p { font-size: 15px !important;; padding: 20px 20px 10px !important; }
+    .aboutheaddiv{ margin-left: 5% !important; margin-right: 5% !important;}
+    .helpcenterformdiv h2{ font-size:22px !important;color:red !important;}
+    
+}
+
+@media only screen and (min-width : 320px)and (max-width : 480px) {
+    .termsofusediv p {   font-size: 15px; padding: 20px 10px 20px !important; }
+    .termsofusediv h3 {padding: 0px 10px 0px !important; }
+     .aboutheaddiv p { font-size: 15px !important;; padding: 20px 40px 10px !important; }
+}
+*/
+        
+/*
+@media only screen and (min-width : 480px)and (max-width : 768px) {
+    .termsofusediv p { font-size: 15px; padding: 20px 10px 20px !important;}
+    .termsofusediv h3 { padding: 0px 10px 0px !important; }
+    }
+
+ @media only screen and (min-width : 768px)and (max-width : 1024px) {
+    .termsofusediv p { font-size: 15px; padding: 20px 10px 20px !important;}
+    .termsofusediv h3 { padding: 0px 10px 0px !important; }
+       }
+@media only screen and (min-width : 320px)and (max-width : 1200px){
+    .submitrequestdiv label, .form-control, .custom-select, .btn{ font-size:12px !important;}
+    .submitrequestdiv .form-group {  margin-bottom: 15px;}
+    .icoservicesdiv h3{ font-size:16px !important;line-height: 23px;
+        padding: 10px 15px !important;}
+    .icoservicesdiv h2{ font-size:20px !important;line-height: 23px;
+        padding:0px 10px !important;}
+    .icoservicesdivmainwhite {   margin: 0px 10px !important;}
+    .icoservicesdivmainwhite p{  padding: 10px !important;}
+    .icoservicesdivmainwhite button{ font-size:14px !important; }
+    .icoservicesdivmainwhite label,p{font-size:13px !important;}
+    .icoservicesdivmainwhite form{padding: 10px !important;}
+    .helpcenterdiv{padding: 20px 0px;}
+}
+@media only screen and (min-width : 320px) and (max-width:380px){
+    .icoservicesdivmainwhite label{font-size:9px !important;}
+   
+}
+*/
+
+/********** MAIN IMG HEAD for anoutcoincode/terms of use/submit request/riskwarning/coincode helpcenter/helpcenter1/fees/ico service/ kycamlpolicy/ privacy poliocy ********/
+
+@media only screen and (min-width:320px) and (max-width:992px){
+    /***ABOUT COINOCDE page ***/
+    .abooutimg img{height: 450px !important;}
+    .aboutheaddiv{margin: 20px !important;}
+    .abouthead h2{ margin-top:95px !important;font-size: 23px !important;text-align:center !important;}
+    .aboutheaddiv p{font-size: 15px !important;padding: 20px 20px 0px !important;}
+    .embed-responsive{margin-top:-245px !important;}
+    
+    /*** TERMS OF USE PAHE ***/
+    .termsofusediv img{height: 450px !important;}
+    .termsofusediv .container .col-md-12{margin-top:-350px !important; }
+    .termsofusediv p { font-size: 15px; padding: 18px 20px 0px;}
+    .termsofusediv h2{font-size:25px !important;}
+    .termsofusediv h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 0px 20px !important;}
+    
+    /*** SUBMIT REQUEST PGE ***/
+    .submitrequestdiv img{height: 450px !important;}
+    .submitrequestdiv .container .col-md-12{margin-top:-350px !important; }
+    .submitrequestdiv h2{font-size:25px !important;}
+    .submitrequestdiv h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 0px 20px !important;}
+    .submitrequestdiv .select-selected {padding: 5px !important;font-size: 13px !important;}
+    .submitrequestdiv .select-items div, .select-selected{font-size: 13px !important;padding: 5px !important;}
+    .submitrequestdiv label{font-size: 13px !important;}
+    
+    /*** RISK WARNING ***/
+    .riskwarningdiv img{height: 450px !important;}
+    .riskwarningdiv .container .col-md-12{margin-top:-350px !important; }
+    .riskwarningdiv h2{font-size:25px !important;}
+    .riskwarningdiv p { font-size: 15px; padding: 18px 20px 0px;}
+    .riskwarningdiv h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 10px 20px !important;}
+    
+    /*** PRIVACY POLICY ***/
+    .privacypolicydiv img{height: 450px !important;}
+    .privacypolicydiv .container .col-md-12{margin-top:-350px !important; }
+    .privacypolicydiv h2{font-size:25px !important;}
+    .privacypolicydiv p { font-size: 15px; padding: 1px 20px 0px;}
+    .privacypolicydiv h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 10px 20px !important;}
+    
+    /*** KYC/AML POLICY ***/
+    .kycamlpolicydiv img{height: 450px !important;}
+    .kycamlpolicydiv  .container .col-md-12{margin-top:-350px !important; }
+    .kycamlpolicydiv  h2{font-size:25px !important;}
+    .kycamlpolicydiv  p { font-size: 15px; padding: 1px 20px 0px;}
+    .kycamlpolicydiv  h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 10px 20px !important;}
+    
+    /*** ICO SERVICES ***/
+    .icoservicesdiv img{height: 450px !important;}
+    .icoservicesdiv  .container .col-md-12{margin-top:-350px !important; }
+    
+    /*** FESS PAGE ***/
+    .maindivfees img{height: 450px !important;}
+    .maindivfees .container .col-md-12{margin-top:-350px !important; }
+    .maindivfees p { font-size: 15px; padding: 18px 20px 0px;}
+    .maindivfees h2{font-size:25px !important;}
+    .maindivfees h3{font-size:20px !important;margin: 0px !important;padding: 0px !important;padding: 0px 20px !important;}
+    
+    /*** ICO SERVICES PAGE ***/
+    .icoservicesdiv h3{ font-size:16px !important;line-height: 23px;
+        padding: 10px 15px !important;}
+    .icoservicesdiv h2{ font-size:20px !important;line-height: 23px;
+        padding:5px 10px !important;}
+     .icoservicesdivmainwhite {   margin: 0px 10px !important;}
+    .icoservicesdivmainwhite p{  padding: 10px !important;}
+    .icoservicesdivmainwhite button{ font-size:14px !important; }
+    .icoservicesdivmainwhite label,p{font-size:13px !important;}
+    .icoservicesdivmainwhite form{padding: 10px !important;}
+    
+    /*** COINCODE HELP CENTER  PAGE  ***/
+    .background {background:url('img/AWS.jpg')no-repeat center center;position: relative;  height: 450px !important;;}
+    .helpcenterformdiv{margin-top:-330px !important;}
+    .helpcenterformdiv h2{ font-size:25px !important;}
+    .helpcenterformdiv .input-container {  margin: 18px 0px !important;}
+    .helpcenterformdiv .input-field,.fa-search,button{font-size:15px !important;}
+    .helpcenterdiv{margin: 20px !important;}
+    .helpcenterdiv .col-md-6{padding: 50px 50px 00px !important;}
+    .helpcenterdiv p{font-size: 15px !important;}
+    
+   
+    
+    /*** COINCODE HELP CENTER 1  PAGE ***/
+    .background1 {background:url('img/AWS.jpg')no-repeat center center;position: relative;  height: 450px !important;;}
+    .helpcenterformdiv1{margin-top:-330px !important;}
+    .helpcenterformdiv1 h2{ font-size:25px !important;}
+    .helpcenterformdiv1 .input-container {  margin: 18px 0px !important;}
+    .helpcenterformdiv1 .input-field,.fa-search,button{font-size:15px !important;}
+    .helpcenterdiv1{margin: 20px !important;}
+    .helpcenterdiv1 .col-md-6{padding: 50px 50px 00px !important;}
+    .helpcenterdiv1 p{font-size: 15px !important;}
+}
+        
+
+/********* MEADI **************/
+@media only screen and (max-width : 320px){}
+@media only screen and (min-width : 320px) and (max-width:480px){}
+@media only screen and (min-width : 481px) and (max-width:767px){}
+@media only screen and (min-width : 768px) and (max-width:991px){}
+@media only screen and (min-width : 992px) and (max-width:1024px){}
+@media only screen and (min-width : 1025px) and (max-width:1280px){}
+@media only screen and (min-width : 1281px){}
+
+
+
+      
+/*********************** footer ****************/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+ footer .col-md-2.list1,h4 { text-align:center !important;margin:  0px !important;padding:10px  0px !important;}
+   .skyback{padding: 5px !important;}
+   .skyback h2{font-size: 23px !important;}
+   }

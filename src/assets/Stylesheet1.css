@@ -1,0 +1,622 @@
+body
+{
+  overflow:hidden;
+}
+* {box-sizing: border-box;font-family: Verdana, Geneva, sans-serif;}
+ 
+   
+.MPZero
+{
+    margin: 0px;padding: 0px;
+    
+}
+/**** SELECT LIST for footer ***/
+  .list1 .custom-select {
+  position: relative;
+  font-family: Arial;font-size:15px;
+}
+ .list1  .custom-select select {
+  display: none;
+}
+
+.list1  .select-selected {
+  background-color:#001321;border: 1px solid #0E5D62;border-radius: 4px;padding: 3px 8px;
+}
+
+ .list1  .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 6px solid #00F0C8;
+  border-color: #00F0C8 transparent transparent transparent;
+}
+
+ .list1  .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #00F0C8  transparent;
+  top: 7px;
+}
+
+ .list1  .select-items div,.select-selected {
+  color: #ffffff;
+  cursor: pointer;padding: 3px 8px;
+ }
+
+.list1  .select-items {
+  position: absolute;
+  background-color: #001321;
+  top: 100%;color:white;border-left: 1px solid #0E5D62;border-right: 1px solid #0E5D62;border-bottom: 1px solid #0E5D62;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+ .list1  .select-hide {
+  display: none;
+}
+.list1  .select-items div:hover, .same-as-selected {
+  background-color: #00F0C8;color: #0B192B;
+}
+
+/************* navbar **************/
+.navbar
+{
+    background-color:  #002846;padding: 0px 0px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 18px 23px 12px;
+}
+.nav>li>a>button
+{
+    background:#00F0C8;color: #13253B;border-radius: 4px;border:none;
+}
+
+.navbar-brand img
+{
+    margin-top: -15px;
+}
+collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 500px;
+}
+.navbar-collapse.in {
+    overflow-y: auto;
+}
+.collapse.in {
+    display: block;
+}
+
+.navbar-inverse .navbar-nav>li>a ,.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus {
+     color:#00F0C8;font-size: 12px;
+}
+
+
+/*** DROP DWON SELECTED MENU IN NAV BAR ****************/
+.navbar-right .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 50px;
+   margin: 2px 0 0;
+    font-size: 11px;
+    text-align: center;
+    list-style: none;
+    background-color: #13253B;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid  #0C192A;;border-radius: 4px 4px 4px 4px;
+    border: 1px solid  #0C192A;;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.navbar-right .dropdown-menu a
+{
+    color:#00F0C8;
+}
+.navbar-right .dropdown-menu a:hover
+{
+    color:#00F0C8;background-color: 
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color:#00F0C8;
+    background-color:#13253B;border: 1px solid  #0C192A;border-radius: 4px;
+}
+
+.dropdown-toggle button{
+   background-color:#22344A;color:black;font-size: 11px;padding:1px 5px;border-radius: 4px;border:none;width:70px;color: #00F0C8;
+}
+
+@media (min-width: 768px)
+.navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.open>.dropdown-menu {
+    display: block;border-radius:4px;
+}
+/*************************** TERMS OF USE PAGE PART 1 IMG ***************************/
+
+.termsofusediv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px;  box-shadow: 0 0 10px #F5F5F5;
+    -moz-box-shadow: 0 0 10px #F5F5F5;
+    -webkit-box-shadow: 0 0 10px #F5F5F5;
+    -o-box-shadow: 0 0 10px #F5F5F5;
+}
+.termsofusediv h2
+{
+    color:#00F0C8;border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.termsofusedivhead
+{
+    background:#F5F5F5;margin: 0px;border-radius: 8px;padding: 10px;color:#212121;
+}
+
+.termsofusediv p
+{
+    font-size:17px;padding:0px 60px 10px;color:#676767;
+}
+
+
+
+
+/*************************** ABOUT THE COINCODE PAGE PART 1 IMG *************************/
+.aboutimg
+        {
+            z-index:1;
+            margin: 0px;padding: 0px; position: relative; text-align: center; color:#00F0C8;
+        }
+    .abouthead {
+    position: absolute;
+    top: 20%;
+    left: 50%;z-index:2;
+    transform: translate(-50%, -50%);
+} 
+.abouthead h2
+{
+    border-bottom:  1px solid white;padding-bottom: 10px; color:#00F0C8;
+}
+.aboutheaddiv 
+{
+    background-color:white;height:auto;border-radius: 8px;
+     }
+
+.aboutheaddiv p
+{
+    font-size:17px;padding:23px 60px 0px;color:#676767;
+}
+
+
+
+
+
+/********************** fees page *************/
+ 
+.maindivfees
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px; 
+}
+.maindivfees h2
+{
+    color:#00F0C8;border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.maindivfeesrowone
+{
+    background:#F5F5F5;margin: 0px;padding: 0px;padding: 10px;border-radius: 8px;color:#212121;
+}
+.maindivfees p
+{
+    font-size:17px;padding:18px 60px 0px;color:#676767;font-weight: 200;
+}
+
+
+/**************** PRIVACY POLICY PAGE **********************/
+.privacypolicydiv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px; 
+}
+.privacypolicydiv h2
+{
+    color:#00F0C8;border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.privacypolicydivhead
+{
+    background:#F5F5F5;margin: 0px;border-radius: 8px;padding: 10px;color:#212121;
+}
+
+.privacypolicydiv p
+{
+    font-size:17px;padding:0px 60px 10px;color:#676767;
+}
+
+/************************ KYC/ AML Policy *************************************/
+.kycamlpolicydiv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px;  
+}
+.kycamlpolicydiv h2
+{
+    color:#00F0C8;border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.kycamlpolicydivhead
+{
+    background:#F5F5F5;margin: 0px;border-radius: 8px;padding: 10px;color:#212121;
+}
+
+.kycamlpolicydiv p
+{
+    font-size:17px;padding:10px 60px 10px;color:#676767;
+}
+
+/************************ RISK WARNING *************************************/
+.riskwarningdiv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px;  
+}
+.riskwarningdiv h2
+{
+    border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.riskwarningdivhead h3
+{
+    background:#F5F5F5;margin: 0px;border-radius: 8px;padding: 12px;color:#212121;
+}
+
+.riskwarningdiv p
+{
+    font-size:17px;padding:10px 60px 10px;color:#676767;
+}
+
+
+/************************ SUBMIT A REQUEST  *************************************/
+.submitrequestdiv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px;  
+}
+.submitrequestdiv h2
+{
+    border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.submitrequestdiv form
+{
+    max-width: 750px;margin: 0px auto;padding: 30px 20px;
+}
+        .submitrequestdiv label {
+    display: inline-block; 
+     max-width: 100%;font-size: 15px;
+     margin-bottom:5px; 
+     font-weight:normal; color:#232121;
+}
+        .submitrequestdiv .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 19px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+        .submitrequestdiv textarea.form-control {
+      width: 100%;
+    height: 80px;resize: none;
+display:block;
+    padding:10px;overflow: hidden;
+}
+.submitrequestdiv  .form-group {
+    margin-bottom: 25px;
+}
+/*
+     .submitrequestdiv .reg_name {
+ max-width:350px;
+}
+*/
+        .submitrequestdiv .btn {
+    color: white;font-size:17px;
+    background-color: #002846;padding: 8px 0px;
+    
+}
+        .submitrequestdiv .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color:white;
+    border: 1px solid #ccc;
+    border-radius: 0px 4px 4px 0px;
+}
+.submitrequestdiv .required
+        {
+            color:red;
+        }
+        /**** SELECT LIST ***/
+ .submitrequestdiv .custom-select {
+  position: relative;
+  font-family: Arial;font-size:15px;
+}
+ .submitrequestdiv .custom-select select {
+  display: none;
+}
+
+.submitrequestdiv .select-selected {padding: 9px 40px;
+  background-color: #002846;border: 1px solid #16345A;border-radius: 4px; 
+}
+
+ .submitrequestdiv .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 6px solid #00F0C8;
+  border-color: #fff transparent transparent transparent;
+}
+
+ .submitrequestdiv .select-selected.select-arrow-active:after {
+  border-color: transparent transparent  #fff  transparent;
+  top: 9px;
+}
+
+ .submitrequestdiv .select-items div,.select-selected {
+  color: #ffffff;
+  cursor: pointer;padding: 9px 40px;border: 1px solid #16345A;
+  
+}
+
+.submitrequestdiv .select-items {
+  position: absolute;
+   background-color: #002846;
+  top: 100%;color:white;border-left: 1px solid #16345A;border-right: 1px solid #16345A;border-bottom: 1px solid #16345A;
+  left: 0;
+  right: 0;
+  z-index: 99;border-radius: 4px;
+}
+
+ .submitrequestdiv .select-hide {
+  display: none;
+}
+.submitrequestdiv .select-items div:hover, .same-as-selected {
+  background-color: #16345A;color: #fff;
+}
+/******** FILE UPLOAD *************/
+.submitrequestdiv .file-box {
+/*  display: inline-block;*/
+    display: block;height:40px; width:100%;
+    border: 1px solid grey;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    font-size: 12px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15
+}
+.submitrequestdiv .file-button {
+     background: red;
+     padding: 0px;
+     border: 1px solid;
+ 
+}
+.submitrequestdiv .fa-upload
+{
+    background:#003157;color:white;padding: 6px;border-radius:20px;  
+}
+   
+/********** RECAPTCHA FOR SUBMIT REQUSET PAGE ***************/
+msg-error {
+    color: #c65848;
+}
+.g-recaptcha.error {
+    border: solid 2px #c64848;
+    padding: 0px;
+    width: 100%;
+}
+.rc-anchor-error-message {
+    color: #ff0000;
+    font-family: Roboto,helvetica,arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 0px;
+}
+.rc-anchor-light.rc-anchor-normal {
+    border: 1px solid #d3d3d3;height:55px;
+}
+.rc-anchor-light {
+    background: #f9f9f9;
+    color: #000;
+}
+.rc-anchor-normal {
+    height: 30px;
+    width: 300px;
+}
+.rc-anchor {
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+}
+ .rc-anchor-logo-img-portrait {
+    height: 15px;
+    margin: 0 0px 0 0px; 
+     width: 100%; 
+}
+.rc-anchor-logo-img {
+    background: url(https://www.gstatic.com/recaptcha/api2/logo_48.png);
+    background-repeat: no-repeat;
+}
+ 
+
+/************************ICO SERVICES PAGE  *************************************/
+.icoservicesdiv
+{
+    height: auto;background:#F5F5F5;padding-bottom:50px;  
+}
+.icoservicesdiv h2
+{
+    border-bottom: 1px solid white;padding-bottom: 10px;
+}
+.icoservicesdiv h3
+{
+    color:#4D4D4D;padding: 10px 40px;line-height: 35px;
+}
+.icoservicesdivmainwhite
+{
+    height:auto;margin: 0px;padding: 0px;border:1px solid #002846;border-radius: 5px;margin: 0px 50px;
+}
+.icoservicesdivmainwhite p
+{
+    font-size:16px;color:#4D4D4D;padding: 20px;
+}
+.icoservicesdivmainwhite button
+{
+    color: white;font-size:16px;    margin: 36px auto 10px;
+    background-color: #002846;width:100%;padding: 6px;border: none;border-radius: 2px;
+}
+.icoservicesdivmainwhite form
+{
+    margin: 0px auto;padding: 40px 20px 10px;
+}
+.icoservicesdivmainwhite label {
+    display: inline-block; 
+     max-width: 100%;font-size: 15px;
+     margin-bottom:5px; 
+     font-weight:normal; color:#232121;
+}
+.icoservicesdivmainwhite .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 19px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.icoservicesdivmainwhite textarea.form-control {
+      width: 100%;
+    height: 100px;resize: none;
+display:block;
+    padding:10px;overflow: hidden;
+}
+.icoservicesdivmainwhite  .form-group {
+    margin-bottom: 25px;
+}
+.icoservicesdivmainwhite  .required
+        {
+            color:red;
+        }
+
+
+/****************************** FOOTER ***********************************************/
+
+.skyback
+{
+/*    background: linear-gradient(to bottom, #1473EB 0%, #13253B 100%);*/
+    color:white;font-weight: 900;padding: 30px 10px;background: #1473EB;
+}
+
+  #hexagon {
+    width: 36px;
+   
+    background: #1D4E73;
+    position: relative;line-height: 0px;
+    margin: 10px 3px;float: left;
+}
+   #hexagon a
+        {
+            font-size:17px;color:#00F0C8;
+        }
+#hexagon:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 12px solid #1D4E73;
+}
+
+#hexagon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 12px solid #1D4E73;
+}
+footer .list1 
+{
+    line-height: 25px;padding: 30px 0px;
+}
+footer h4
+{
+    color:#00F0C8 ;font-size: 15px;font-weight: 600;
+}
+footer ul{
+    list-style-type:none;margin: 0px;padding: 0px;color:white;font-size:15px;
+}
+footer a
+{
+    color: #F1F2F3;text-decoration: none;
+}
+footer i
+{
+    color:#03D3B4;font-size: 18px;
+}
+footer a:hover
+{
+    color: #F1F2F3;text-decoration: none;
+}
+footer p
+{
+    color:white;font-size: 11px;text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
