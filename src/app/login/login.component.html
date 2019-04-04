@@ -1,0 +1,90 @@
+
+<app-navbar></app-navbar>
+ <div class="conatainer-fluid" style="margin: 0px;padding: 0px;margin-top:70px;">
+        <!--- back img--->    
+        <!---- login form---->
+        <div class="col-md-12 logindivpart">
+
+            <!----heading--->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                <h1>Log in to Coincode</h1>
+                </div>
+            </div>
+            <!--- LOGIN FORM-->
+            <div class="row" style="max-width: 1300px;margin: 0px auto;">
+            <div class="col-lg-4 col-xs-12 col-sm-8 col-sm-offset-2 col-lg-offset-4 text-center logodiv" style="">
+
+                <!------>
+            <form>
+                        <label>Enter your credentials to log in</label>
+
+                           <div class="input-group">
+                              <input id="email" type="text" class="form-control" name="email" placeholder="Email ID">
+                               <span class="input-group-addon"><img src="assets/img/1.png" height="28" width="28"></span>
+                            </div>
+                           <div class="input-group">
+                              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                <span class="input-group-addon"><img src="assets/img/4.png" height="28" width="28"></span>
+                              </div>
+
+                        <!---- RECAPTCHA --->
+                           <div class="recaptcha-wrapper">
+    <!--                            <div id="myrecaptcha" class="g-recaptcha"></div>-->
+
+                               <label class="container1" id="myrecaptcha" style="margin-top: 16px;margin-left: -95px;">I'm not a Robot.
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                            </label>
+    <!--
+
+                              <div class="rc-anchor-checkbox-label">I'm not a Robot.</div>
+
+    -->
+                            <div class="recaptcha-info"></div>
+                            <div class="rc-anchor-logo-text">reCAPTCHA</div>
+                            <div class="rc-anchor-pt">
+    <!--
+                              <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a>
+                              <span aria-hidden="true" role="presentation"> - </span>
+                              <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a>
+    -->
+                            </div>
+                            </div>
+
+                        <!--- LOST YOUR PWD ---->
+                           <div class="row">
+                                <a href="#" style="font-size:12px;">Lost your Password?</a>
+                           </div>
+                        <!--- Register link ---->
+                            <div class="row" style="margin: 13px 0px 18px;">
+                                <label style="font-weight: 100;">Not a Member ?</label>  
+
+                                &nbsp;<a href="register" style="color:#00BFA5;font-weight: bold;font-size: 17px;">Register Here</a>
+                           </div>
+                        <!---BUTOON--->
+                            <div class="row" style="margin: 0px;padding: 0px;">
+                             <button class="raise" style="width:100%;">LOGIN</button>
+                            </div>
+
+                </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<script>
+        
+function recaptchaReady () {
+grecaptcha.render('myrecaptcha', {
+'sitekey': '6Lc7JBAUAAAAANrF3CJaIjt7T9IEFSmd85Qpc4gj',
+'expired-callback': function () {
+ grecaptcha.reset();
+ console.log('recatpcha');
+}
+});
+}
+
+</script>    

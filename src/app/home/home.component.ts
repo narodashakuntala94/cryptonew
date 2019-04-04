@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   //  Myname='My name is sakhu'
 
   //  text='input text changed'
-  text=''
+  // text=''
  
   // callMyfunction(){
   //   // console.log('button clicked');
@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
   //   updatevent(e){
   //   this.text=e.target.value;
   // }
+
+  
   ngOnInit() {
    /* used for auto plal  */
     $('.autoplay').slick({
@@ -28,19 +30,21 @@ export class HomeComponent implements OnInit {
       autoplaySpeed: 2000,
       });
    /* added for window scrooling */ 
-            //scrolll to top btn
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= 50) {        
-  $('#return-to-top').fadeIn(200);    
-  } else {
-  $('#return-to-top').fadeOut(200); 
-  }
-  });
-  $('#return-to-top').click(function() {      
-  $('body,html').animate({
-  scrollTop : 0                      
-  }, 500);
-  });  
-  }
+      //scrolll to top btn
+
+        
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        
+    $('#return-to-top').fadeIn(200);    
+    } else {
+    $('#return-to-top').fadeOut(200); 
+    }
+    });
+    $('#return-to-top').click(function() {      
+    $('body,html').animate({
+    scrollTop : 0                      
+    }, 500);
+    });  
+    }
 
 }
