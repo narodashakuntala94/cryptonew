@@ -26,6 +26,10 @@ export class ExchangeComponent implements OnInit {
     this.hideMenu = !this.hideMenu
     event.stopPropagation();
 
+
+
+
+    
 //     $('#menu-button').click(function(e){
 //       event.stopPropagation();
 //        $('#hide-menu').toggleClass('show-menu');

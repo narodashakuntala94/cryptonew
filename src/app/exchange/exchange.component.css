@@ -1,3 +1,35 @@
+
+
+.show-menu {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.hide-menu {
+    background-color: #0B192B;
+    position: fixed;
+    border-left: 1px solid #64FFDA;
+    top: 0px;
+    right: 0;
+    z-index: 1;
+    width: 260px;
+    height: 100%;
+    -webkit-transform: translate3d(300px,0,0);
+    -moz-transform: translate3d(300px,0,0);
+    -o-transform: translate3d(300px,0,0);
+    -ms-transform: translate3d(300px,0,0);
+    transform: translate3d(300px,0,0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -ms-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+
 .amcharts-chart-div a {display:none !important;}
 
     #chartdiv {

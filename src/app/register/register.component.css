@@ -339,7 +339,7 @@ button.raise:hover,
 }
 /***************************** REGISTER PAGE********************************/
 .registerdivpart
-{position: absolute;left: 50%; top: 50%;  transform: translate(-50%, -50%);width: 100%;}
+{position: absolute;left: 50%; top: 53%;  transform: translate(-50%, -50%);width: 100%;}
 .registerdivpart h1{color: white;font-weight: 600;font-size: 40px;padding-bottom: 20px;}
 .registerdiv{background: white;border-radius: 15px;    box-shadow: 1px -1px 30px 4px #09121F;}
 .registerdiv form {padding: 38px 23px;color: #002846;}

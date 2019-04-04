@@ -1,7 +1,7 @@
 
 
  body{ 
-    /* background-image: url('img/37.jpg'); */
+ background-image: url('/assets/img/37.jpg'); 
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position: center center;
@@ -141,7 +141,7 @@ span.icon-bar{color: #13253B;}
 }
 /************** login form*************/
 .logindivpart
-{position: absolute;left: 50%; top: 50%;  transform: translate(-50%, -50%);width: 100%;}
+{position: absolute;left: 50%; top: 53%;  transform: translate(-50%, -50%);width: 100%;}
 .logindivpart h1{color: white;font-weight: 600;font-size: 40px;padding-bottom: 20px;}
 .logodiv{background: white;border-radius: 15px;    box-shadow: 1px -1px 30px 4px #09121F;}
 .logodiv form {padding: 38px;color: #002846;}
@@ -295,10 +295,12 @@ button.raise:hover,
 /* Create a custom checkbox */
 .logodiv .checkmark {
     position: absolute;
-    top: 16px;
-    left: 17px;
+    top: 0px;
+    left: 56px;
     height: 25px;
-    width: 25px;border: 1px solid #002846;border-radius: 4px;
+    width: 25px;
+    border: 1px solid #002846;
+    border-radius: 4px;
     background-color: #fff;
 }
 
