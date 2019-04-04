@@ -71,7 +71,7 @@
                                 <span class="btn-day glyph-sun-fill"></span>
                             </button></a></li>
 
-                    <li><a href="#" class="hidden-sm hidden-xs"><span style="font-size:22px;cursor:pointer;color:white;"
+                    <li><a (click) = "toggle()"cclass="hidden-sm hidden-xs"><span style="font-size:22px;cursor:pointer;color:white;"
                                 class="menu-button" id="menu-button"><i class="fa fa-bars" aria-hidden="true"></i></span></a></li>
 
                 </ul>
@@ -82,7 +82,7 @@
 
 
     <!-------- SIDE BAR CALLING  -------------------------------------------->
-    <nav id="hide-menu" class="hide-menu">
+    <nav id="hide-menu" class="" [ngClass]="hideMenu?'show-menu':'hide-menu'">
         <div id="mySidenav" class="sidenav"><br /><br />
             <!--            <a href="#" class="closebtn" >&times;</a>-->
             <div class="col-md-12">
