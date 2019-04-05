@@ -32,6 +32,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     ReportsComponent,
     SupportComponent,
     AboutUsComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -78,7 +79,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
         path: 'exchange',
         component: ExchangeComponent
       }
-      
+     
       
 
     ])

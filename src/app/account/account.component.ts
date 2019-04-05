@@ -11,90 +11,97 @@ export class AccountComponent implements OnInit {
 
   ngOnInit() {
 
-
-    $(document).ready(function () {
-      $('.btnNext').click(function () {
-          $('.nav-tabs > .active').next('li').find('a').trigger('click');
+    $(".showacctpage").on('click',function(){
+        alert("hi"); 
+         $("#prsnlacctsubmodal").modal('hide');
+         $('#hide2').hide();
+         $('#hide1').show();
+ //        $("button").removeClass("prsnlacctbtn");
+     });
+     
+     /******* Remove verify btn class in prsnl acct *******/
+      $(".showacctpage").on('click',function(){
+        $(".prsnlacctbtn").removeClass('prsnlacctbtn');  
       });
-
-      $(window).on('load', function () {
-          $('#myModalsec').modal('show');
+     /******* Remove verify btn class in crprt acct *******/
+     $(".showacctpage1").on('click',function(){
+         $(".crprtacctbtn").removeClass('crprtacctbtn');  
+         alert("hi");
       });
-  });
+    /************************ account persoanl verify btn click ****************************/
+     $('.crprtacctbtn').on('click',function(){
+                alert("hi");
+         $('#hide1').hide();
+         $('#hide3').show();
+     }); 
+     
 
 
 
 
+        $('.prsnlacctbtn').on('click',function(){
+            $('#hide1').hide();
+            $('#hide2').show();
+        });
+ 
 
+   
+     /*********** TO CLICKON KYC TAB HIDE ACCT ALL TAB*******/
+    $('#kyc1').click(function(){
+        alert("hi");
+         $('#hide2').hide();
+         $('#hide3').hide();
+     }); 
+      
+     /**********  TO CLICK ON ACCT TAB SHOW HIS TAB *********/ 
+      $("#act1").click(function(){
+      alert("hi");
+          $('#hide1').show();
+      });
   
+        
+        /********************** KYC TAB  SUBMIT BTN CLICK THEN DISPALY 2Nd FORM  *************/  
+        $('.Kycbtn1').on('click', function() {
+            $('#kycform1').hide();
+            $('#kycform2').show();
+            $('#kycform3').show();           
+        });
 
-  var x, i, j, selElmnt, a, b, c;
 
-  x = document.getElementsByClassName("custom-select");
-  for (i = 0; i < x.length; i++) {
-      selElmnt = x[i].getElementsByTagName("select")[0];
 
-      a = document.createElement("DIV");
-      a.setAttribute("class", "select-selected");
-      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-      x[i].appendChild(a);
 
-      b = document.createElement("DIV");
-      b.setAttribute("class", "select-items select-hide");
-      for (j = 0; j < selElmnt.length; j++) {
+        $('#profile-image1').on('click', function() {
+          $('#profile-image-upload1').click();
+           });
+          $('#profile-image2').on('click', function() {
+          $('#profile-image-upload2').click();
+           });
+          $('#profile-image3').on('click', function() {
+          $('#profile-image-upload3').click();
+           });
 
-          c = document.createElement("DIV");
-          c.innerHTML = selElmnt.options[j].innerHTML;
-          c.addEventListener("click", function (e) {
 
-              var y, i, k, s, h;
-              s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-              h = this.parentNode.previousSibling;
-              for (i = 0; i < s.length; i++) {
-                  if (s.options[i].innerHTML == this.innerHTML) {
-                      s.selectedIndex = i;
-                      h.innerHTML = this.innerHTML;
-                      y = this.parentNode.getElementsByClassName("same-as-selected");
-                      for (k = 0; k < y.length; k++) {
-                          y[k].removeAttribute("class");
-                      }
-                      this.setAttribute("class", "same-as-selected");
-                      break;
-                  }
-              }
-              h.click();
+                
+          /******************** ANTI PHISHING ENBALE BTN ***************/
+          $(".btnanti").click(function(){
+            $("#multibutton").text('Modify');
           });
-          b.appendChild(c);
-      }
-      x[i].appendChild(b);
-      a.addEventListener("click", function (e) {
+            
+            /********* ONE BY ONE TWO MODAL CALL IN ONE BTN ANTI PHISHING ENABLE OR DISABLE *************/
+          $('#multibutton').on('click', function() {
+            //alert("This is the first alert!");
+              $("#myModalantiphis1").modal('show');
+            
+            $(this).off('click');
+            $(this).on('click', function() {
+                //alert("This is the second alert!");
+                $('#myModalantiphis2').modal('show');
+            });
+          });
 
-          e.stopPropagation();
-          closeAllSelect(this);
-          this.nextSibling.classList.toggle("select-hide");
-          this.classList.toggle("select-arrow-active");
-      });
-  }
 
-  function closeAllSelect(elmnt) {
 
-      var x, y, i, arrNo = [];
-      x = document.getElementsByClassName("select-items");
-      y = document.getElementsByClassName("select-selected");
-      for (i = 0; i < y.length; i++) {
-          if (elmnt == y[i]) {
-              arrNo.push(i)
-          } else {
-              y[i].classList.remove("select-arrow-active");
-          }
-      }
-      for (i = 0; i < x.length; i++) {
-          if (arrNo.indexOf(i)) {
-              x[i].classList.add("select-hide");
-          }
-      }
-  }
-  document.addEventListener("click", closeAllSelect);
+
 
   }
 
