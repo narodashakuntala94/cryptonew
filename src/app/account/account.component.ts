@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewEncapsulation} from '@angular/core';
 declare var $:any;
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
-  styleUrls: ['./account.component.css']
+  styleUrls: ['./account.component.css'],
+  encapsulation:ViewEncapsulation.None
 })
 export class AccountComponent implements OnInit {
-
+  hideMenu:boolean = false;
   constructor() { }
 
   ngOnInit() {
+
+
+
+
+
+
+
+
+
+
+  //  start java script and jQuery view code
+
 
     $(".showacctpage").on('click',function(){
         alert("hi"); 
@@ -104,5 +117,19 @@ export class AccountComponent implements OnInit {
 
 
   }
+
+
+  ngAfterViewInit(){
+    // this.toggle()
+  }
+
+  toggle(){
+    
+    this.hideMenu = !this.hideMenu
+    event.stopPropagation();
+  }
+
+
+
 
 }

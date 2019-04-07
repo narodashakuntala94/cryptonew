@@ -50,12 +50,12 @@
             
    
           <li><a href="#"><button class="btn">DEPOSIT</button></a></li>
-            <li><a href="#"><button class="day-night">
-      <span class="btn-night glyph-moon-fill"></span>
-      <span class="btn-day glyph-sun-fill"></span>
-                </button></a></li>
+          <li><a href="#"><button class="day-night">
+            <span class="btn-night glyph-moon-fill"></span>
+            <span class="btn-day glyph-sun-fill"></span>
+            </button></a></li>
             
-          <li><a href="#" class="hidden-sm hidden-xs"><span style="font-size:22px;cursor:pointer;color:white;" class="menu-button" id="menu-button"><i class="fa fa-bars" aria-hidden="true"></i></span></a></li>
+          <li><a (click)="toggle()" class="hidden-sm hidden-xs"><span style="font-size:22px;cursor:pointer;color:white;" class="menu-button" id="menu-button"><i class="fa fa-bars" aria-hidden="true"></i></span></a></li>
             
         </ul>
       </div>
@@ -65,57 +65,69 @@
   
     <br/><br/><br/><br/><br/><br/>
       <!-------- SIDE BAR CALLING  -------------------------------------------->
-     <nav id="hide-menu" class="hide-menu">
-          <div id="mySidenav" class="sidenav"><br/><br/>
-  <!--            <a href="#" class="closebtn" >&times;</a>-->
-          <div class="col-md-12">
-              <div class="row text-center">
-                  <div class="imground">
-                      <img src="img/1.jpg" height="120" width="120" class="img-circle">
-                  </div>
-              </div>
-              <div class="row text-center">
-                  <h3>Robert Wadia</h3>
-              </div>
-              <div class="row text-center">
-                  <p>robertxyz564@gmail.com</p>
-              </div>
-              <!-----------VERTICAL MENU ------------>
-              <div class="row">
-                <ul class="mainmenu">
-                  <li><a href="AfterLogin-exchange.html"><i class="fa fa-user" aria-hidden="true"></i>Exchange </a></li>
-                  <li><a href="account.html"><i class="fa fa-user" aria-hidden="true"></i>Account <i class="fa fa-angle-down" aria-hidden="true" style=""></i></a>
-                    <ul class="submenu">
-                      <li><a href="account.html">Security<i class="fa fa-angle-right" aria-hidden="true" ></i></a></li>
-                      <li><a href="account.html">Account Verifiaction<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                      <li><a href="account.html">KYC<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    </ul>
-                    </li>
-                  <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Funds <i class="fa fa-angle-down" aria-hidden="true" style=""></i></a>
-                    <ul class="submenu">
-                      <li><a href="assets.html">Deposit<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                      <li><a href="assets.html">Withdraw<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                      <li><a href="assets.html">Transaction History<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </li>
-                      <li><a href="reports.html"><i class="fa fa-user" aria-hidden="true"></i>Reports <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                    <ul class="submenu">
-                      <li><a href="reports.html">Open Orders<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                      <li><a href="">My Trades<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                      <li><a href="reports.html">Future Contract<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                        <li><a href="reports.html">Order History<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    </ul>
-                    </li>
-                     <li><a href="support.html"><i class="fa fa-user" aria-hidden="true"></i>Support</a></li>
-                     <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Log out</a></li>
-                </ul>
-  
-                  
-              </div>
-          </div>
-      </div>
-          
-          </nav>
+      <nav id="hide-menu" class="hide-menu" [ngClass]="hideMenu?'show-menu':'hide-menu'">
+            <div id="mySidenav" class="sidenav"><br /><br />
+                <!--            <a href="#" class="closebtn" >&times;</a>-->
+                <div class="col-md-12">
+                    <div class="row text-center">
+                        <div class="imground">
+                            <img src="assets/img/1.jpg" height="120" width="120" class="img-circle">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h3>Robert Wadia</h3>
+                    </div>
+                    <div class="row text-center">
+                        <p>robertxyz564@gmail.com</p>
+                    </div>
+                    <!-----------VERTICAL MENU ------------>
+                    <div class="row">
+                        <ul class="mainmenu">
+                            <li><a href="exchange"><i class="fa fa-user" aria-hidden="true"></i>Exchange </a></li>
+                            <li><a href="account"><i class="fa fa-user" aria-hidden="true"></i>Account <i
+                                        class="fa fa-angle-down" aria-hidden="true" style=""></i></a>
+                                <ul class="submenu">
+                                    <li><a href="account">Security<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="account">Account Verifiaction<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="account">KYC<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="assets"><i class="fa fa-user" aria-hidden="true"></i>Funds <i class="fa fa-angle-down"
+                                        aria-hidden="true" style=""></i></a>
+                                <ul class="submenu">
+                                    <li><a href="assets">Deposit<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="assets">Withdraw<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="assets">Transaction History<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="reports"><i class="fa fa-user" aria-hidden="true"></i>Reports <i
+                                        class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="reports">Open Orders<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="">My Trades<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                    <li><a href="reports">Future Contract<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="reports">Order History<i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="support"><i class="fa fa-user" aria-hidden="true"></i>Support</a></li>
+                            <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Log out</a></li>
+                        </ul>
+    
+    
+                    </div>
+                </div>
+            </div>
+      </nav>
+    
      <!-------------------------------Button ------------------------>
       <div class="container" >
           <div class="col-md-12" style="margin: 15px auto;" >
