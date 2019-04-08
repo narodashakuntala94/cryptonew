@@ -1,3 +1,27 @@
+.coltab{
+
+    background-color: inherit;
+    float: left;
+    color: #00F0C8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #00F0C8;
+    transition: 0.3s;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 8px 15px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #0C192A;
+    background-color: #00F0C8;
+}
+/* .active{
+    background-color: #00F0C8;
+    color: #0C192A;
+ } */
+
 footer .select-items div, .select-selected {
     color: #00F0C8;
    background:  #13253B;
