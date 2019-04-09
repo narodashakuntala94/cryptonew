@@ -16,6 +16,10 @@ import { AssetsComponent } from './assets/assets.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SupportComponent } from './support/support.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminheaderComponent } from './adminheader/adminheader.component';
+import { AdminfooterComponent } from './adminfooter/adminfooter.component';
+import { AdminsidebarComponent } from './adminsidebar/adminsidebar.component';
 
 
 @NgModule({
@@ -31,7 +35,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AssetsComponent,
     ReportsComponent,
     SupportComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AdminComponent,
+    AdminheaderComponent,
+    AdminfooterComponent,
+    AdminsidebarComponent
+    
    
   ],
   imports: [
@@ -78,11 +87,13 @@ import { AboutUsComponent } from './about-us/about-us.component';
       {
         path: 'exchange',
         component: ExchangeComponent
+      },
+      {
+        path: 'admin',
+        component: AdminComponent
       }
      
-      
-
-    ])
+  ])
 
 
 
