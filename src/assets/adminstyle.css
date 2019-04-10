@@ -616,16 +616,18 @@ body{font-family: 'Roboto', sans-serif;}
   opacity: 0;
 }
 /********************************************SIGN UP PAGE**************************/
-body{font-family: 'Roboto', sans-serif;}
+body{
+    font-family: 'Roboto', sans-serif};
+    
     * {box-sizing: border-box;}
 /****************** sign up back *********/
-}
+
 #outer {
   position: relative;
   width: 100%;
   height: 100%;
 
-        }
+    }
   #container {
     background-color: #fff;
     color: #663399;
@@ -637,9 +639,9 @@ body{font-family: 'Roboto', sans-serif;}
     left: 50%;top: 50%;
          box-shadow:0px 2px 15px black;
     -moz-box-shadow:0px 2px 15px black,;
-     -webkit-box-shadow:0px 2px 15px black;}
-  }
-}
+     -webkit-box-shadow:0px 2px 15px black;
+    }
+  
    
 /************************sign up form**************************/
 .registerdiv form {color: #002846;padding: 20px;}
