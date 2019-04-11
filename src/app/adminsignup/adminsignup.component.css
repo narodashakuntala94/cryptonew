@@ -1,6 +1,10 @@
-
 /* @import url('../../assets/dist/css/AdminLTE.min.css'); */
-
-/* @import url('../../assets/dist/css/skins/all-skins.min.css'); */
-
 @import url('../../assets/adminstyle.css');
+/* @import url('../../assets/dist/css/skins/all-skins.min.css') */
+
+
+
+
+.bck{
+    background: #06888D;
+}
