@@ -147,7 +147,12 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
       {
         path: 'adminsignup',
         component:  AdminsignupComponent
+      },
+      {
+        path: 'adminlogin',
+        component:   AdminloginComponent
       }
+
 
   ])
 
