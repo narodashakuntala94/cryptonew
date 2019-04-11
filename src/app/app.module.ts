@@ -28,6 +28,8 @@ import { AllcontactComponent } from './allcontact/allcontact.component';
 import { RejectedcontactComponent } from './rejectedcontact/rejectedcontact.component';
 import { RatesComponent } from './rates/rates.component';
 import { PagelistComponent } from './pagelist/pagelist.component';
+import { AdminsignupComponent } from './adminsignup/adminsignup.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { PagelistComponent } from './pagelist/pagelist.component';
     AllcontactComponent,
     RejectedcontactComponent,
     RatesComponent,
-    PagelistComponent
+    PagelistComponent,
+    AdminsignupComponent,
+    AdminloginComponent
     
    
   ],
@@ -139,11 +143,11 @@ import { PagelistComponent } from './pagelist/pagelist.component';
       {
         path: 'pagelist',
         component:  PagelistComponent
+      },
+      {
+        path: 'adminsignup',
+        component:  AdminsignupComponent
       }
-
-
-
-
 
   ])
 
