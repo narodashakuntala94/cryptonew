@@ -1,0 +1,76 @@
+<app-adminheader></app-adminheader>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+  <app-adminsidebar></app-adminsidebar>
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) --><br />
+    <section class="content-header" style="background: #fff;margin: 8px 25px;">
+
+      <h1>
+        NEWS LISTING
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li>News Listing</li>
+        <li class="active"><a href="addnews.html">Add News</a></li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content tabheader" style="margin: 8px 11px;">
+      <div class="col-md-12"
+        style="background: #fff;-webkit-box-shadow: 0 0 15px lightgrey;    box-shadow: 0 0 15px lightgrey;padding-bottom: 30px;">
+        <!---- nav pillst tab-->
+
+        <div class="row text-center" style="margin: 0px auto;padding: 30px 0px 10px;">
+
+          <label style="margin: 0px;padding: 0px;background: #E6E6E6;color: #000;
+          padding: 8px 50px;border-radius: 25px;font-size: 18px;font-weight: 100;">ADD NEWS</label>
+
+        </div>
+
+        <!---- ADD SUB PAGE FORM-->
+        <div class="row addnews" style="margin: 0px;padding: 0px;">
+
+          <form action="" style="">
+            <div class="form-group">
+              <label for="">ADD NEWS SUBJECT<span style="color: red;"></span></label>
+              <input type="text" class="form-control" id="email" placeholder="" name="">
+            </div>
+            <!----->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="row" style="margin: 0px;padding: 0px;"> <label>ADD NEWS IMAGE</label></div>
+                <div style="background:#EDEDED;border:1px solid #CCCCCC;height: 350px;max-width: 350px;;">
+
+                  <div class="upload-btn-wrapper">
+                    <button class="btn">CHOOSE FILE</button>
+                    <input type="file" name="myfile" onchange="readURL(this); " />
+                    <img src="" id="blah" style="" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-8" style="">
+                <div class="row" style="margin: 0px;padding: 0px;"> <label>ADD NEWS CONTENT</label></div>
+                <textarea style="height: 245px;">Next, get a free Tiny Cloud API key!</textarea>
+              </div>
+
+            </div>
+
+            <!----BUTTON --->
+            <div class="row" style="max-width: 200px;margin: 50px auto 0px;">
+              <button class="btn"><a href="">SUBMIT</a></button>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+</body>

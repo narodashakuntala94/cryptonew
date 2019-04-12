@@ -30,6 +30,7 @@ import { RatesComponent } from './rates/rates.component';
 import { PagelistComponent } from './pagelist/pagelist.component';
 import { AdminsignupComponent } from './adminsignup/adminsignup.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AddnewsComponent } from './addnews/addnews.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     RatesComponent,
     PagelistComponent,
     AdminsignupComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    AddnewsComponent
     
    
   ],
@@ -151,8 +153,11 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
       {
         path: 'adminlogin',
         component:   AdminloginComponent
+      },
+      {
+        path: 'addnews',
+        component:   AddnewsComponent
       }
-
 
   ])
 
