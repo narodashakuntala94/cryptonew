@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule }  from '@angular/forms';
+import {FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 
-import { ExchangeService } from './service/exchange.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -67,7 +66,12 @@ import { AddnewsComponent } from './addnews/addnews.component';
     AdminsignupComponent,
     AdminloginComponent,
     AddnewsComponent
+<<<<<<< HEAD
     
+=======
+   
+   
+>>>>>>> af1cd6317a3c44b9452a7cffb26c1e6d523cc112
   ],
   imports: [
     BrowserModule,

@@ -5,4 +5,5 @@ export class User {
     emailId: String;
     mobileNumber:String;
     password: String;
-}
+    
+ }
