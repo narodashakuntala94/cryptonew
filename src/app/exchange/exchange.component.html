@@ -23,21 +23,19 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
                     <ul class="nav navbar-nav text-center hidenav " style="padding: 0px 20px;color: white;">
-                            <li><a href="#"><span style="color: #00F1C9;">Available Balance:</span><br /><span
-                                        style="border-bottom:1px solid #00F1C9;">
-                                        2.500 BTC</span><br />55.22 LTC</a></li>
+                        <li><a href="#"><span style="color: #00F1C9;">Available Balance:</span><br><span style="border-bottom:1px solid #00F1C9;">
+                            2.500 BTC</span><br>55.22 USDT</a></li>
         
-                            <li><a href="#"><span style="color: #00F1C9;">Asset Value:</span><br /><span
-                                        style="border-bottom:1px solid #00F1C9;">
-                                        2.500 BTC</span><br />55.22 LTC</a></li>
+                        <li><a href="#"><span style="color: #00F1C9;">Asset Value:</span><br><span style="border-bottom:1px solid #00F1C9;">
+                                            2.500 BTC</span><br>55.22 USDT</a></li>
         
-                            <li><a href="#"><span style="color: #00F1C9;">Available Margin:</span><br /><span style="">
-                                        500000 USDT</span></a></li>
+                        <li><a href="#"><span style="color: #00F1C9;">Available Margin:</span><br><span style="border-bottom:1px solid #00F1C9;">
+                                            55.22 BTC </span><br>500000 USDT</a></li>
         
-                            <li><a href="#"><span style="color: #00F1C9;">Trading Balance:</span><br><span style="border-bottom:1px solid #00F1C9;">
+                        <li><a href="#"><span style="color: #00F1C9;">Trading Balance:</span><br><span style="border-bottom:1px solid #00F1C9;">
                                                 2.500 BTC</span><br>55.22 USDT</a></li>
 
-                            <li><a href="#"><span style="color:#00FF00;">Profit / <span style="color: red;"> Loss</span></span><br><span style="border-bottom:1px solid #00F1C9;color:#00FF00;">
+                        <li><a href="#"><span style="color:#00FF00;">Profit / <span style="color: red;"> Loss</span></span><br><span style="border-bottom:1px solid #00F1C9;color:#00FF00;">
                                         55.22 <span style="color:#FFF;">BTC</span></span><br><span style="color:#00FF00;">562.256 <span style="color:#FFF;">USDT</span></span></a></li>
                     </ul>
 
@@ -45,15 +43,7 @@
 
                         <li class="dropdown">
                                 <a class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" href="#"><button>USD</button></a>
-                                
-                                <!--<a class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown"
-                                href="#"><button><span id="selected">USD</span>&nbsp;<span class="caret"></span></button></a> -->
-                                
-                                <!--<ul class="dropdown-menu">
-                                <li><a href="#">USD</a></li>
-                                <li><a href="#">ICO</a></li>
-                                <li><a href="#">USD</a></li>
-                                </ul> -->
+                       
                         </li>
 
 
@@ -94,7 +84,7 @@
                     <ul class="mainmenu">
                         <li><a href="exchange"><i class="fa fa-user" aria-hidden="true"></i>Exchange </a></li>
                         <li><a href="account"><i class="fa fa-user" aria-hidden="true"></i>Account <i
-                                    class="fa fa-angle-down" aria-hidden="true" style=""></i></a>
+                                    class="fa fa-angle-down" aria-hidden="true"></i></a>
                             <ul class="submenu">
                                 <li><a href="account">Security<i class="fa fa-angle-right"
                                             aria-hidden="true"></i></a></li>
@@ -105,7 +95,7 @@
                             </ul>
                         </li>
                         <li><a href="assets"><i class="fa fa-user" aria-hidden="true"></i>Funds <i class="fa fa-angle-down"
-                                    aria-hidden="true" style=""></i></a>
+                                    aria-hidden="true"></i></a>
                             <ul class="submenu">
                                 <li><a href="assets">Deposit<i class="fa fa-angle-right"
                                             aria-hidden="true"></i></a></li>
@@ -128,7 +118,7 @@
                             </ul>
                         </li>
                         <li><a href="support"><i class="fa fa-user" aria-hidden="true"></i>Support</a></li>
-                        <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>Log out</a></li>
+                        <li><a (click)="logout()"><i class="fa fa-user" aria-hidden="true"></i>Log out</a></li>
                     </ul>
 
 
@@ -148,31 +138,76 @@
                 <div class="col-md-6 lefttab">
                     <div class="row" style="padding: 7px 7px;">
 
+              
                         <div id="output"></div>
 
-                        <ul class="nav nav-pills text-center">
-                            <li class="col-md-2 col-xs-12 col-sm-6 " style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" href="#ccd" onclick='get_val("CCD");'>CCD</a></li>
-                            <li class="active  col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" onclick='get_val("BTC");' id="tabbtc" href="#btc">BTC</a></li>
+
+                         <ul class="nav nav-pills text-center mb10 nav-justified form-tabs hidden-xs hidden-sm ">
+                            <li class="active col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a data-toggle="pill"
+                                    href="#usd" id="tabusdt">USDT</a></li>
                             <li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" href="#eth" id="tabeth" onclick='get_val("ETH");'>ETH </a></li>
-                            <li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" href="#ico" id="tabico" onclick='get_val("ICO");'>ICO</a></li>
-                            <li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" href="#usd" id="tabusdt" onclick='get_val("USDT");'>USDT</a></li>
-                            <li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a
-                                    data-toggle="pill" href="#fav" id="tabfav" onclick='get_val("FAV");'>Favourites
-                                    *</a></li>
-                        </ul>
+                                    data-toggle="pill" id="tabbtc" href="#btc">BTC</a></li>
+                            <li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a data-toggle="pill"
+                                    href="#eth" id="tabeth">ETH </a></li>
+                        	<li class="col-md-2 col-xs-12 col-sm-6" style="margin: 0px;padding: 0px;"><a data-toggle="pill"
+                                    href="#fav" id="tabfav"><i class="fa fa-star" aria-hidden="true" style="color:#00FF00; ;"></i> Favourites</a></li>
+                         </ul>
+
+
                     </div>
 
                     <div class="row MPZero" style="padding:7px 7px;">
                         <div class="row scrollbar3 " id="style-3">
                             <div class="force-overflow3">
                                 <div class="tab-content">
-                                    <div id="ccd" class="tab-pane fade">
-                                        <table style="width:100%;">
+                                   
+									
+                                    <div id="btc" class="tab-pane fade">
+                                        <table style="width:100%;" id="display-table">
+                                            <thead>
+                                                <tr>
+                                                    <th >Cryptocurrency</th>
+                                                    <th>Price</th>
+                                                    <th>Volume (BTC)</th>
+                                                    <th>Change</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                    <tr *ngFor="let user of cryptoRates?.data" class="highlight">
+
+                                                         <div *ngIf="user.symbol!='CCD' && user.symbol!='BTC'" style="display: contents;"> 
+
+                                                         <td onclick="','http://13.59.222.160:3000/bitcoin.png','USDT')"><a href="#"><i class="fa fa-star"></i></a>
+                                                            <img src="{{user.img}}"><span style="font-size: 16px;font-weight: bold;">{{user.symbol}}</span> <span style="font-size: 11px;" class="BTCsmall">/ BTC</span></td>
+                                                            <td class="capLive">{{user.buyingPriceBtc.toFixed(4)}}</td>
+
+                              
+                                                            <td>{{user.availableSupply}}</td>
+
+                                                            <td *ngIf="user.percentChange24h<0">
+                                                                <span class="text-danger">{{user.percentChange24h}}%</span>
+                                                            </td>
+                                                            
+                                                            <td *ngIf="user.percentChange24h>0">
+                                                                    <span class="text-success">{{user.percentChange24h}}%</span>
+                                                            </td>
+
+
+                                                            <td style="display:none">BTC</td>						
+                                                            <td style="display:none">600.2573785374461</td>						
+                                                            <td id="api_buy" style="display:none">5326.5999411083</td>						
+                                                            <td style="display:none">5326.5999411083</td>						
+                                                            <td style="display:none">600.2573785374461</td>	 
+                                                        </div>
+                                                    </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+									<div id="eth" class="tab-pane fade">
+                                        <table id="exampleeth" style="width:100%;">
                                             <thead>
                                                 <tr>
                                                     <th>Cryptocurrency</th>
@@ -181,93 +216,135 @@
                                                     <th>Change</th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="tableCcd">
+                                            <tbody>
+
+                                               <tr *ngFor="let user of cryptoRates?.data" class="highlight">
+
+                                                    <div *ngIf="user.symbol!='CCD' && user.symbol!='ETH'" style="display: contents;"> 
+
+                                                            <td onclick="','http://13.59.222.160:3000/bitcoin.png','USDT')"><a href="#"><i class="fa fa-star"></i></a>
+                                                            <img src="{{user.img}}"><span style="font-size: 16px;font-weight: bold;">{{user.symbol}}</span> <span style="font-size: 11px;" class="BTCsmall">/ ETH</span></td>
+                                                            <td class="capLive">{{user.buyingPriceEth.toFixed(4)}}</td>
+                                                            <td>{{user.availableSupply}}</td>
+
+                                                           
+                                                            <td *ngIf="user.percentChange24h<0">
+                                                                <span class="text-danger">{{user.percentChange24h}}%</span>
+                                                            </td>
+                                                            
+                                                            <td *ngIf="user.percentChange24h>0">
+                                                                    <span class="text-success">{{user.percentChange24h}}%</span>
+                                                            </td>
+
+                                                            <td style="display:none">BTC</td>						
+                                                            <td style="display:none">600.2573785374461</td>						
+                                                            <td id="api_buy" style="display:none">5326.5999411083</td>						
+                                                            <td style="display:none">5326.5999411083</td>						
+                                                            <td style="display:none">600.2573785374461</td>	 
+                                                    </div>
+                                                </tr>
 
                                             </tbody>
                                         </table>
+                                    </div> 
+
+                                
+
+                                   <div id="usd" class="tab-pane fade in active">
+                                        <table style="width:100%;" id="tblusdt">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cryptocurrencyes</th>
+                                                    <th>Price</th>
+                                                    <th>Volume (BTC)</th>
+                                                    <th>Change</th>
+
+                                                </tr>
+                                            </thead>
+                                          
+                                                    <tbody>
+                                                          <tr *ngFor="let user of cryptoRates?.data" class="highlight">
+
+                                                             <div *ngIf="user.symbol!='CCD' && user.symbol!='USDT'" style="display: contents;"> 
+
+                                                                  <td onclick="','http://13.59.222.160:3000/bitcoin.png','USDT')"><a href="#"><i class="fa fa-star"></i></a>
+                                                                    
+                                                                    <img src="{{user.img}}">
+
+                                                                    <span style="font-size: 16px;font-weight: bold;">{{user.symbol}}</span>
+                                                             
+                                                                    <span style="font-size: 11px;" class="BTCsmall">/ USDT</span>
+
+                                                                  </td>
+
+                                                                <td class="capLive">{{user.buyingPriceUsd.toFixed(4)}}</td>
+               
+                                                                <td>{{user.availableSupply}}</td>
+
+                                                                <td *ngIf="user.percentChange24h<0">
+                                                                    <span class="text-danger">{{user.percentChange24h}}%</span>
+                                                                </td>
+                                                                
+                                                                <td *ngIf="user.percentChange24h>0">
+                                                                        <span class="text-success">{{user.percentChange24h}}%</span>
+                                                                </td>
+    
+
+                                                                <td style="display:none">BTC</td>						
+                                                                <td style="display:none">600.2573785374461</td>						
+                                                                <td id="api_buy" style="display:none">5326.5999411083</td>						
+                                                                <td style="display:none">5326.5999411083</td>						
+                                                                <td style="display:none">600.2573785374461</td>	 
+
+                                                          
+                                                              </div>
+
+                                                            </tr>
+  
+                                                    </tbody>
+
+                                            </table>
+
+                                    </div> 
+
+
+
+
+									<div id="fav" class="tab-pane fade">
+                                       <table style="width:100%;">
+											<thead>
+                                                <tr>
+                                                    <th>Cryptocurrency</th>
+                                                    <th>Price</th>
+                                                    <th>Volume (BTC)</th>
+                                                    <th>Change</th>
+                                                </tr>
+                                            </thead>
+										<tbody id="favTable">
+
+
+
+
+
+
+
+										</tbody>
+                                       
+                                    </table>
                                     </div>
 
-                                    <div id="btc" class="tab-pane fade in active">
-                                        <table style="width:100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th style="padding-left: 80px;">Cryptocurrency</th>
-                                                    <th>Price</th>
-                                                    <th>Volume (BTC)</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="tableBtc">
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div id="eth" class="tab-pane fade">
-                                        <table id="exampleeth" style="width:100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th style="padding-left: 80px;">Cryptocurrency</th>
-                                                    <th>Price</th>
-                                                    <th>Volume (BTC)</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="tableEth">
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div id="ico" class="tab-pane fade">
-                                        <table style="width:100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th style="padding-left: 80px;">Cryptocurrency</th>
-                                                    <th>Price</th>
-                                                    <th>Volume (BTC)</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="tableIco">
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div id="usd" class="tab-pane fade">
-                                        <table style="width:100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th style="padding-left: 80px;">Cryptocurrency</th>
-                                                    <th>Price</th>
-                                                    <th>Volume (BTC)</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="tableUsdt">
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div id="fav" class="tab-pane fade">
-                                        <table style="width:100%;">
-                                            <thead>
-                                                <tr>
-                                                    <th style="padding-left: 80px;">Cryptocurrency</th>
-                                                    <th>Price</th>
-                                                    <th>Volume (BTC)</th>
-                                                    <th>Change</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="favTable">
-                                            </tbody>
 
-                                        </table>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
+
                 </div>
 
 
-                <div class="col-md-6 righttab" style="">
+                <div class="col-md-6 righttab">
                     <div class="row" style="padding: 7px 7px;">
                         <ul class="nav nav-pills text-center">
                             <li class="active  col-md-2 col-xs-12 col-sm-4" style="margin: 0px;padding: 0px;"><a
@@ -288,7 +365,7 @@
                     <input type="hidden" value="" id="extype" name="extype" style="color:#000;">
 
 
-                    <div class="row" style="">
+                    <div class="row">
                         <div class="tab-content">
                             <div id="m" class="tab-pane fade in active">
                                 <div class="col-md-6 " style="padding: 7px 7px;">
@@ -316,14 +393,14 @@
                                         <!---->
                                         <div style="text-align: center;">
                                         <div class="row ">
-                                            <div class="col-md-6 " style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6 " style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck"
                                                         onclick="myFunction(); getstoploss();">
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6 " style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6 " style="margin:0px auto">
                                                 <label class="container"> ADD STOP PROFIT: <input type="checkbox"
                                                         id="myCheck1" onclick="myFunction1();getstopprofit();"
                                                         style="display: none;"><span class="checkmark"></span>
@@ -514,14 +591,14 @@
 
                                         <div style="text-align: center">
                                         <div class="row ">
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck2"
                                                         onclick="myFunction2();getstoploss_sell();">
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container"> ADD STOP PROFIT: <input type="checkbox"
                                                         id="myCheck3"
                                                         onclick="myFunction3();getstopprofit_sell();"><span
@@ -706,7 +783,7 @@
                                         <!---->
                                     <div style="text-align: center">
                                         <div class="row ">
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck4"
                                                         onclick="myFunction4();getstoploss_limit();"
@@ -714,7 +791,7 @@
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container"> ADD STOP PROFIT: <input type="checkbox"
                                                         id="myCheck5" onclick="myFunction5();getstopprofit_limit();"
                                                         style="display: none;"><span class="checkmark"></span>
@@ -725,7 +802,7 @@
 
                                         <!---->
                                         <div class="row MPZero">
-                                            <form style="">
+                                            <form>
                                                 <div class="row MPZero">
                                                     <label for="" class="labelgreen" id="margin-getin">YOU GET
                                                         IN:</label>
@@ -784,20 +861,20 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_loss_limit_input" style="" disabled>
+                                                                id="stop_loss_limit_input" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_loss_limit_per" class="idinput2" style=""
+                                                                id="stop_loss_limit_per" class="idinput2"
                                                                 disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" id="stop_loss_limit_plus"
-                                                                onclick="loss_limit_plus()" class="btngreen1" style=""
+                                                                onclick="loss_limit_plus()" class="btngreen1"
                                                                 disabled>
                                                         </div>
 
@@ -824,13 +901,13 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_profit_limit_input" style="" disabled>
+                                                                id="stop_profit_limit_input" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_profit_limit_per" class="idinput2" style=""
+                                                                id="stop_profit_limit_per" class="idinput2" 
                                                                 disabled>
                                                         </div>
 
@@ -838,7 +915,7 @@
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" id="stop_profit_limit_plus"
                                                                 onclick="profit_limit_plus()" class="btngreen1"
-                                                                style="">
+                                                                >
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
@@ -901,14 +978,14 @@
                                         <br />
                                         <div style="text-align: center">
                                         <div class="row ">
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck6"
                                                         onclick="myFunction6();getstoploss_limit_sell();">
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container"> ADD STOP PROFIT: <input type="checkbox"
                                                         id="myCheck7"
                                                         onclick="myFunction7();getstopprofit_limit_sell();"><span
@@ -986,13 +1063,13 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_loss_limit_sell_input" style="" disabled>
+                                                                id="stop_loss_limit_sell_input" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_loss_limit_sell_per" class="idinput2" style=""
+                                                                id="stop_loss_limit_sell_per" class="idinput2"
                                                                 disabled>
                                                         </div>
 
@@ -1001,7 +1078,7 @@
                                                             <input type="button" value="+"
                                                                 id="stop_loss_limit_sell_plus"
                                                                 onclick="loss_limit_sell_plus()" class="btngreen1"
-                                                                style="" disabled>
+                                                             disabled>
                                                         </div>
 
                                                         <div class="col-md-2  col-sm-2 col-xs-2"
@@ -1027,20 +1104,20 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6 "
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_profit_limit_sell_input" style="" disabled>
+                                                                id="stop_profit_limit_sell_input" disabled>
                                                         </div>
 
                                                         <div class="col-md-2  col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%" class="idinput2"
-                                                                id="stop_profit_limit_sell_per" style="" disabled>
+                                                                id="stop_profit_limit_sell_per" disabled>
                                                         </div>
 
                                                         <div class="col-md-2  col-sm-2 col-xs-2"
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" class="btngreen1"
                                                                 id="stop_profit_limit_sell_plus"
-                                                                onclick="limit_sell_plus()" style="" disabled>
+                                                                onclick="limit_sell_plus()" disabled>
                                                         </div>
 
                                                         <div class="col-md-2  col-sm-2 col-xs-2"
@@ -1105,14 +1182,14 @@
                                         <!---->
                                         <div style="text-align: center">                                      
                                               <div class="row ">
-                                                <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                                <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck8"
                                                         onclick="myFunction8();getstoploss_future();">
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container"> ADD STOP PROFIT: <input type="checkbox"
                                                         id="myCheck9"
                                                         onclick="myFunction9();getstopprofit_future();"><span
@@ -1190,7 +1267,7 @@
 
 
 
-                                                <div class="row MPZero" style="">
+                                                <div class="row MPZero">
                                                     <label for="" class="labelgreen" id="payin_by_fut">YOU PAY IN
                                                         :</label>
                                                 </div>
@@ -1204,7 +1281,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row MPZero" style="">
+                                                <div class="row MPZero">
                                                     <label for="" class="" id="margin-txt" style="float:left">MARGIN IN
                                                         BTC : </label> <b id="future_margin" style="padding:0px 5px;">
                                                         BTC</b>
@@ -1225,20 +1302,20 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_loss_fut_input_buy" style="" disabled>
+                                                                id="stop_loss_fut_input_buy" disabled>
                                                         </div>
 
                                                         <div class="col-md-2  col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_loss_fut_per_buy" class="idinput2" style=""
+                                                                id="stop_loss_fut_per_buy" class="idinput2"
                                                                 disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" id="stop_loss_fut_plus_buy"
-                                                                class="btngreen1" onclick="loss_future_plus()" style=""
+                                                                class="btngreen1" onclick="loss_future_plus()"
                                                                 disabled>
                                                         </div>
 
@@ -1266,13 +1343,13 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_profit_fut_input_buy" style="" disabled>
+                                                                id="stop_profit_fut_input_buy" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_profit_fut_per_buy" class="idinput2" style=""
+                                                                id="stop_profit_fut_per_buy" class="idinput2" 
                                                                 disabled>
                                                         </div>
 
@@ -1280,7 +1357,7 @@
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" id="stop_profit_fut_plus_buy"
                                                                 onclick="profit_future_plus()" class="btngreen1"
-                                                                style="" disabled>
+                                                                 disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
@@ -1346,14 +1423,14 @@
 
                                         <div style="text-align: center;">
                                         <div class="row ">
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container">
                                                     <input type="checkbox" id="myCheck10"
                                                         onclick="myFunction10();getstoploss_future_sell();">
                                                     <span class="checkmark"></span>ADD STOP LOSS:
                                                 </label>
                                             </div>
-                                            <div class="col-md-6" style="background: ;margin: 0px auto;">
+                                            <div class="col-md-6" style="margin: 0px auto;">
                                                 <label class="container"> ADD STOP LOSS: <input type="checkbox"
                                                         id="myCheck11"
                                                         onclick="myFunction11();getstopprofit_future_sell();"><span
@@ -1434,7 +1511,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row MPZero" style="">
+                                                <div class="row MPZero">
                                                     <label for="" class="" style="float:left"
                                                         id="fut_margin_curr">MARGIN IN : </label> <b
                                                         id="future_margin_sell" style="padding:0px 5px;"> </b>
@@ -1461,20 +1538,20 @@
                                                         <div class="col-md-6  col-sm-6 col-xs-6 "
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_loss_fut_input_sell" style="" disabled>
+                                                                id="stop_loss_fut_input_sell" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_loss_fut_per_sell" class="idinput2" style=""
+                                                                id="stop_loss_fut_per_sell" class="idinput2"
                                                                 disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+" id="stop_loss_fut_plus_sell"
-                                                                class="btngreen1" style="" disabled>
+                                                                class="btngreen1" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
@@ -1502,13 +1579,13 @@
                                                         <div class="col-md-6 col-sm-6 col-xs-6"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" class="idinput1"
-                                                                id="stop_profit_fut_input_sell" style="" disabled>
+                                                                id="stop_profit_fut_input_sell" disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2 text-center"
                                                             style="padding: 0px 5px;">
                                                             <input type="text" placeholder="12%"
-                                                                id="stop_profit_fut_per_sell" class="idinput2" style=""
+                                                                id="stop_profit_fut_per_sell" class="idinput2" 
                                                                 disabled>
                                                         </div>
 
@@ -1516,7 +1593,7 @@
                                                             style="padding: 0px 5px;">
                                                             <input type="button" value="+"
                                                                 id="stop_profit_fut_plus_sell" class="btngreen1"
-                                                                style="" disabled>
+                                                                 disabled>
                                                         </div>
 
                                                         <div class="col-md-2 col-sm-2 col-xs-2"
@@ -1682,12 +1759,12 @@
 
                     <!----- RIGHT SIDE ---->
                     <div class="col-md-6">
-                        <div class="row" style="">
+                        <div class="row">
 
                             <div class="col-md-6 " style="padding: 7px 7px;">
                                 <div class="row text-center Buyorder" style="margin: 0px;padding: 0px;">
                                     <!---HEAD---->
-                                    <div class="col-md-12 text-center buyorderhead" style="">
+                                    <div class="col-md-12 text-center buyorderhead">
                                         <p>BUY ORDERS </p>
                                     </div>
 
@@ -1809,7 +1886,7 @@
                             <div class="col-md-6 " style="padding: 7px 7px;">
                                 <div class="row text-center sellorder MPZero">
                                     <!---HEAD---->
-                                    <div class="col-md-12 text-center sellorderhead" style="">
+                                    <div class="col-md-12 text-center sellorderhead">
                                         <p>SELL ORDERS </p>
                                     </div>
 
@@ -2100,18 +2177,18 @@
                     <!----- LEFT SIDE --->
                     <div class="col-md-6">
                         <div class="row MPZero" style="padding: 7px 7px;">
-                            <div class="row trollbox MPZero" style="">
+                            <div class="row trollbox MPZero">
                                 <div class="col-md-12 MPZero">
                                     <div class="row"
                                         style=" background-color: #092445;border-bottom: 1px solid #06FCFD;margin-bottom: 0px;border-radius: 5px 5px 0px 0px;; ">
                                         <!--------firstdiv ------>
-                                        <div class="col-md-10 col-xs-8 col-sm-8 MPZero" style="">
+                                        <div class="col-md-10 col-xs-8 col-sm-8 MPZero">
                                             <p>TROLL<span style="color:#06FCFD;">BOX</span> </p>
                                         </div>
                                         <!--------- drop down ----->
                                         <div class="col-md-2 col-xs-4 col-sm-4" style="border-left:1px solid white;">
                                             <div class="navbar-form pull-left">
-                                                <select name="" id="" class="form-control" style="">
+                                                <select name="" id="" class="form-control">
                                                     <option value="1">English</option>
                                                     <option value="2">English1</option>
                                                     <option value="3">English2</option>
@@ -2254,7 +2331,7 @@
                                                 <input type="text" placeholder="Type Message"><br />
                                             </div>
                                             <div class="col-md-2 col-sm-12 col-xs-12" style="padding-bottom: 16px;">
-                                                <button style=""><i class="fa fa-paper-plane" aria-hidden="true"
+                                                <button><i class="fa fa-paper-plane" aria-hidden="true"
                                                         style="font-size: 23px;color:white;"></i></button>
                                             </div>
                                         </div>

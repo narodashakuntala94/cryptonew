@@ -16,42 +16,53 @@
             <div class="row" style="max-width: 1300px;margin: 0px auto;">
                 <div class="col-lg-4 col-xs-12 col-sm-8 col-sm-offset-2 col-lg-offset-4 text-center logodiv" style="">
 
+
                     <!------>
-                    <form>
+
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
                         <label>Enter your credentials to log in</label>
 
-                        <div class="input-group">
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Email ID">
-                            <span class="input-group-addon"><img src="assets/img/1.png" height="28" width="28"></span>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="email" type="text" class="form-control" formControlName="emailId"
+                                    placeholder="Email ID"
+                                    [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" />
+                                <span class="input-group-addon"><img src="assets/img/1.png" height="28"
+                                        width="28"></span>
+                            </div>
+                            <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback" style="color: #dc3545;">
+                                <div *ngIf="f.emailId.errors.required">Email is required</div>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input id="password" type="password" class="form-control" name="password"
-                                placeholder="Password">
-                            <span class="input-group-addon"><img src="assets/img/4.png" height="28" width="28"></span>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input id="password" type="password" class="form-control" formControlName="password"
+                                    placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                                <span class="input-group-addon"><img src="assets/img/4.png" height="28"
+                                        width="28"></span>
+                            </div>
+                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback"
+                                style="color: #dc3545;">
+                                <div *ngIf="f.password.errors.required">Password is required</div>
+                            </div>
                         </div>
 
                         <!---- RECAPTCHA --->
                         <div class="recaptcha-wrapper">
-                            <!--                            <div id="myrecaptcha" class="g-recaptcha"></div>-->
 
                             <label class="container1" id="myrecaptcha"
                                 style="margin-top: 16px;margin-left: -42px;font-size: 18px!important;">I'm not a Robot.
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                             </label>
-                            <!--
 
-                              <div class="rc-anchor-checkbox-label">I'm not a Robot.</div>
-
-    -->
                             <div class="recaptcha-info"></div>
                             <div class="rc-anchor-logo-text">reCAPTCHA</div>
                             <div class="rc-anchor-pt">
-                                <!--
-                              <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy</a>
-                              <span aria-hidden="true" role="presentation"> - </span>
-                              <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms</a>
-    -->
+
                             </div>
                         </div>
 
@@ -67,11 +78,18 @@
                                 Here</a>
                         </div>
                         <!---BUTOON--->
-                        <div class="row" style="margin: 0px;padding: 0px;">
-                            <button class="raise" style="width:100%;">LOGIN</button>
+                        <div class="form-group">
+                            <div class="row" style="margin: 0px;padding: 0px;">
+                                <button [disabled]="loading" class="raise" style="width:100%;">LOGIN</button>
+                            </div>
                         </div>
 
                     </form>
+
+
+
+
+
                 </div>
             </div>
         </div>

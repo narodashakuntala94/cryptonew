@@ -1,96 +1,102 @@
 <app-navbar></app-navbar>
 
 <div class="conatainer-fluid" style="margin: 0px;padding: 0px;margin-top:70px;">
-  <!--- back img--->    
+    <!--- back img--->
 
-<!---- register form---->
-<div class="col-md-12 registerdivpart" style="background-image: url(/assets/img/37.jpg);height: 94%;">
-  
-  <!----heading--->
-  <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center">
-      <h1 style="margin-top: 90px;">Register in to Coincode</h1>
-      </div>
-  </div>
-  <!--- LOGIN FORM-->
-  <div class="row" style="max-width: 1300px;margin: 0px auto;">
-  <div class="col-lg-4 col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-offset-4 text-center registerdiv">
-      
-      <!------>
-  <form class="" action=""  onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
-              
-  <label style="margin-bottom: 28px;">Enter your personal data to Register</label>
-      
-      <div class="row">
-              <div class="col-md-6"> 
-                  <div class="input-container" >
-                  <input class="input-field" type="text" placeholder="FIRST NAME *" name="usrnm" >
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="input-container" >
-              <input class="input-field" type="text" placeholder="LAST NAME*" name="usrnm" >
-              </div>
-              </div>
-              </div>         
-              
-      <div class="input-container" >
-              <input class="input-field" type="text" placeholder="EMAIL ID" name="email" >
-                  <img src="assets/img/1.png" height="28" width="25" class="icon" style="">
-                  </div>
+    <!---- register form---->
+    <div class="col-md-12 registerdivpart" style="background-image: url(/assets/img/37.jpg);height: 94%;">
 
-      <div class="input-container">
-               <div class="custom-select">
-                                          <select >
-                                              <option value="0">+91</option>
-                                              <option value="1">+92</option>
-                                              <option value="2">+93</option>
-                                              <option value="3">+94</option>
-                                              <option value="4">+95</option>
-                                              <option value="5">+96</option>
-                                          </select>
-                                      </div>
-                   <input class="input-field" type="text" name="">
-                    <img src="assets/img/2.png" height="28" width="28" class="icon">
-                          </div>
+        <!----heading--->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h1 style="margin-top: 90px;">Register in to Coincode</h1>
+            </div>
+        </div>
+        <!--- LOGIN FORM-->
+        <div class="row" style="max-width: 1300px;margin: 0px auto;">
+            <div
+                class="col-lg-4 col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-offset-4 text-center registerdiv">
+
+                <!------>
+                <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+
+                    <label style="margin-bottom: 28px;">Enter your personal data to Register</label>
+
+                    <!-- <input type="hidden" name="userId" #userId="ngModel" [(ngModel)]="registerService.selectedRegister.userId"> -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-container">
+                                <input class="input-field" type="text" name="firstName" #name="ngModel" [(ngModel)]="registerService.selectedRegister.firstName" placeholder="FIRST NAME *">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-container">
+                                <input class="input-field" type="text" placeholder="LAST NAME*" name="lastName" #name="ngModel" [(ngModel)]="registerService.selectedRegister.lastName">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="input-field" type="text" placeholder="EMAIL ID" name="emailId" #name="ngModel" [(ngModel)]="registerService.selectedRegister.emailId">
+                        <img src="assets/img/1.png" height="28" width="25" class="icon">
+                    </div>
+
+                    <div class="input-container">
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">+91</option>
+                                <option value="1">+92</option>
+                                <option value="2">+93</option>
+                                <option value="3">+94</option>
+                                <option value="4">+95</option>
+                                <option value="5">+96</option>
+                            </select>
+                        </div>
+                        <input class="input-field" type="text" name="mobileNumber" #name="ngModel" [(ngModel)]="registerService.selectedRegister.mobileNumber">
+                        <img src="assets/img/2.png" height="28" width="28" class="icon">
+                    </div>
 
 
-      <div class="input-container" >
-                 <input class="input-field" type="password" placeholder="PASSWORD" name="PASS">
-                      <img src="assets/img/3.png" height="28" width="28" class="icon">
-                   </div>
+                    <div class="input-container">
+                        <input class="input-field" type="password" placeholder="PASSWORD" name="password" #name="ngModel" [(ngModel)]="registerService.selectedRegister.password">
+                        <img src="assets/img/3.png" height="28" width="28" class="icon">
+                    </div>
 
-      <div class="input-container">
-                  <input class="input-field" type="password" placeholder="CONFIRM PASSWORD" name="psw">
-                     <img src="assets/img/4.png" height="28" width="28" class="icon">
-                   </div>
-              
-                
-              <!---- checkbox--->
-      <div class="row" style="font-size: 12px;font-weight: 700;padding: 0px 20px;">
-                  
-                  <label class="container3">
-                    <input type="checkbox" name="checkbox" value="check" id="agree">
-                    <span class="checkmark"></span>
-                      I have read and agree to the<a href="#" target="_blank" style="color:#00BFA5;;"> Terms of use </a>and<a href="#" target="_blank" style="color:#00BFA5;;"> Privacy Policy</a>
-                  </label>
-              </div>
-              
-             <!--- Register link ---->
-      <div class="row" style="margin: 13px 0px 18px;">
-                      <label style="font-weight: 100;">Already have an account?</label>  
-                      
-                      &nbsp;<a href="login.html" style="color:#00BFA5;font-weight: bold;font-size: 17px;">Login here</a>
-                 </div>
-      
-              <!---BUTOON--->
-      <div class="row" style="margin: 0px;padding: 0px;">
-                   <button style="width:100%;" value="submit">REGISTER</button>
-                  </div>
-           
-      </form>
-      </div>
-  </div>
+                    <!-- 
+                        <div class="input-container">
+                        <input class="input-field" type="password" placeholder="CONFIRM PASSWORD" name="psw">
+                        <img src="assets/img/4.png" height="28" width="28" class="icon">
+                        </div>
+
+                    -->
+
+                    <!---- checkbox--->
+                    <div class="row" style="font-size: 12px;font-weight: 700;padding: 0px 20px;">
+
+                        <label class="container3">
+                            <input type="checkbox" name="checkbox" value="check" id="agree">
+                            <span class="checkmark"></span>
+                            I have read and agree to the<a href="#" target="_blank" style="color:#00BFA5;;"> Terms of
+                                use </a>and<a href="#" target="_blank" style="color:#00BFA5;;"> Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <!--- Register link ---->
+                    <div class="row" style="margin: 13px 0px 18px;">
+                        <label style="font-weight: 100;">Already have an account?</label>
+
+                         &nbsp;<a href="login" style="color:#00BFA5;font-weight: bold;font-size: 17px;">Login
+                            here</a>
+                    </div>
+
+                    <!---BUTOON--->
+                    <div class="row" style="margin: 0px;padding: 0px;">
+                        <button style="width:100%;" value="submit">REGISTER</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-  

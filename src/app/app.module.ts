@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }  from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
+import { ExchangeService } from './service/exchange.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +25,17 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminheaderComponent } from './adminheader/adminheader.component';
 import { AdminfooterComponent } from './adminfooter/adminfooter.component';
 import { AdminsidebarComponent } from './adminsidebar/adminsidebar.component';
+import { AllUserComponent } from './all-user/all-user.component';
+import { MywalletComponent } from './mywallet/mywallet.component';
+import { AlltransactionsComponent } from './alltransactions/alltransactions.component';
+import { AdmminsupportComponent } from './admminsupport/admminsupport.component';
+import { AllcontactComponent } from './allcontact/allcontact.component';
+import { RejectedcontactComponent } from './rejectedcontact/rejectedcontact.component';
+import { RatesComponent } from './rates/rates.component';
+import { PagelistComponent } from './pagelist/pagelist.component';
+import { AdminsignupComponent } from './adminsignup/adminsignup.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AddnewsComponent } from './addnews/addnews.component';
 
 
 @NgModule({
@@ -39,14 +55,27 @@ import { AdminsidebarComponent } from './adminsidebar/adminsidebar.component';
     AdminComponent,
     AdminheaderComponent,
     AdminfooterComponent,
-    AdminsidebarComponent
+    AdminsidebarComponent,
+    AllUserComponent,
+    MywalletComponent,
+    AlltransactionsComponent,
+    AdmminsupportComponent,
+    AllcontactComponent,
+    RejectedcontactComponent,
+    RatesComponent,
+    PagelistComponent,
+    AdminsignupComponent,
+    AdminloginComponent,
+    AddnewsComponent
     
-   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+    
 
 
 
@@ -91,8 +120,52 @@ import { AdminsidebarComponent } from './adminsidebar/adminsidebar.component';
       {
         path: 'admin',
         component: AdminComponent
+      },
+      {
+        path: 'all-user',
+        component: AllUserComponent
+      },
+      {
+        path: 'mywallet',
+        component: MywalletComponent
+      },
+      {
+        path: 'alltransactions',
+        component: AlltransactionsComponent
+      },
+      {
+        path: 'admminsupport',
+        component:  AdmminsupportComponent
+      },
+      {
+        path: 'allcontact',
+        component:  AllcontactComponent
+      },
+      {
+        path: 'rejectedcontact',
+        component:  RejectedcontactComponent
+      },
+      {
+        path: 'rates',
+        component:  RatesComponent
+      },
+      {
+        path: 'pagelist',
+        component:  PagelistComponent
+      },
+      {
+        path: 'adminsignup',
+        component:  AdminsignupComponent
+      },
+      {
+        path: 'adminlogin',
+        component:   AdminloginComponent
+      },
+      {
+        path: 'addnews',
+        component:   AddnewsComponent
       }
-     
+
   ])
 
 
@@ -100,7 +173,7 @@ import { AdminsidebarComponent } from './adminsidebar/adminsidebar.component';
 
 
   ],
-  providers: [],
+  providers: [ExchangeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

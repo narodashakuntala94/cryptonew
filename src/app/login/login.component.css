@@ -1,5 +1,9 @@
 
 
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
  body{ 
  background-image: url('/assets/img/37.jpg'); 
     background-repeat:no-repeat;
