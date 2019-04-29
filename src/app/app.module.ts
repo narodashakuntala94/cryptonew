@@ -1,12 +1,9 @@
+import { AuthGuard } from './service/auth.guard';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule }  from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
-
 import { ExchangeService } from './service/exchange.service';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -115,7 +112,8 @@ import { AddnewsComponent } from './addnews/addnews.component';
       },
       {
         path: 'exchange',
-        component: ExchangeComponent
+        component: ExchangeComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: 'admin',
